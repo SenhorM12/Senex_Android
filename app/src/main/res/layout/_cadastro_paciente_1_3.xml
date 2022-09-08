@@ -1,0 +1,247 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent" android:layout_height="wrap_content" >
+
+	<ScrollView android:id="@+id/_cadastro_paciente_1_3" 
+		android:layout_width="wrap_content" 
+		android:layout_height="match_parent" >
+
+		<RelativeLayout android:id="@+id/content_container" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" >
+
+			<RelativeLayout android:id="@+id/page___cadastro_paciente_1_3_ek1"
+				android:layout_marginTop="0dp"
+				android:layout_marginStart="0dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				>
+
+				<ImageView
+					android:id="@+id/cor_de_fundo_ek2"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:layout_marginStart="0dp"
+					android:layout_marginTop="0dp"
+					android:contentDescription="cor_de_fundo_ek2"
+					android:src="@drawable/cor_de_fundo_ek2" />
+
+				<View
+					android:id="@+id/cor_de_fundo_ek3"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:layout_marginStart="0dp"
+					android:layout_marginTop="0dp"
+					android:background="@drawable/cor_de_fundo_ek3" />
+
+				<ImageView
+					android:id="@+id/homem_perfil_caricatura_18591_58482_1_ek6"
+					android:layout_width="121dp"
+					android:layout_height="118dp"
+					android:layout_marginStart="131dp"
+					android:layout_marginTop="63dp"
+					android:contentDescription="homem_perfil_caricatura_18591_58482_1_ek6"
+					android:src="@drawable/homem_perfil_caricatura_18591_58482_1_ek6" />
+
+				<TextView
+					android:id="@+id/nome_protegido"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal|center"
+					android:layout_marginStart="8dp"
+					android:layout_marginTop="186dp"
+					android:gravity="center"
+					android:shadowColor="#000000"
+					android:shadowDx="0"
+					android:shadowDy="4"
+					android:shadowRadius="4"
+					android:text="Nome Protegido"
+					android:textColor="@color/_bg__home_ek2_color"
+					android:textSize="26sp" />
+
+				<TextView
+					android:id="@+id/telefone__ek1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal|center"
+					android:layout_marginStart="8dp"
+					android:layout_marginTop="382dp"
+					android:gravity="center"
+					android:shadowColor="#000000"
+					android:shadowDx="0"
+					android:shadowDy="4"
+					android:shadowRadius="4"
+					android:text="@string/telefone__ek1_string"
+					android:textColor="@color/_bg__home_ek2_color"
+					android:textSize="26sp" />
+
+				<TextView
+					android:id="@+id/endere_o__ek6"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal|center"
+					android:layout_marginStart="8dp"
+					android:layout_marginTop="474dp"
+					android:gravity="center"
+					android:shadowColor="#000000"
+					android:shadowDx="0"
+					android:shadowDy="4"
+					android:shadowRadius="4"
+					android:text="Endereço"
+					android:textColor="@color/_bg__home_ek2_color"
+					android:textSize="26sp" />
+
+				<TextView
+					android:id="@+id/cep__ek1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal|center"
+					android:layout_marginStart="8dp"
+					android:layout_marginTop="576dp"
+					android:gravity="center"
+					android:shadowColor="#000000"
+					android:shadowDx="0"
+					android:shadowDy="4"
+					android:shadowRadius="4"
+					android:text="@string/cep__ek1_string"
+					android:textColor="@color/_bg__home_ek2_color"
+					android:textSize="26sp" />
+
+				<TextView
+					android:id="@+id/cpf__ek6"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal|center"
+					android:layout_marginStart="8dp"
+					android:layout_marginTop="289dp"
+					android:gravity="center"
+					android:shadowColor="#000000"
+					android:shadowDx="0"
+					android:shadowDy="4"
+					android:shadowRadius="4"
+					android:text="CPF:(Opcional)"
+					android:textColor="@color/_bg__home_ek2_color"
+					android:textSize="26sp" />
+
+
+				<com.google.android.material.textfield.TextInputEditText
+					android:id="@+id/rectangle_9_ek5"
+					android:layout_width="373dp"
+					android:layout_height="51dp"
+					android:layout_marginStart="8dp"
+					android:layout_marginTop="220dp"
+					android:alpha="0.60000002384186"
+					android:background="@drawable/rectangle_1_shape"
+					android:gravity="center"
+					android:hint="Algenor"
+					android:textColor="@color/white"
+					android:textColorHint="@color/white"
+					android:textSize="25sp" />
+
+				<com.google.android.material.textfield.TextInputEditText
+					android:id="@+id/rectangle_10_ek7"
+					android:layout_width="373dp"
+					android:layout_height="51dp"
+					android:layout_marginStart="6dp"
+					android:layout_marginTop="415dp"
+					android:alpha="0.60000002384186"
+					android:background="@drawable/rectangle_1_shape"
+					android:gravity="center"
+					android:hint="(00) 0000 - 0000"
+					android:textColor="@color/white"
+					android:textColorHint="@color/white"
+					android:textSize="25sp" />
+
+				<com.google.android.material.textfield.TextInputEditText
+					android:id="@+id/rectangle_11_ek2"
+					android:layout_width="373dp"
+					android:layout_height="51dp"
+					android:layout_marginStart="6dp"
+					android:layout_marginTop="505dp"
+					android:alpha="0.60000002384186"
+					android:background="@drawable/rectangle_1_shape"
+					android:gravity="center"
+					android:hint="Rua senex, 20"
+					android:textColor="@color/white"
+					android:textColorHint="@color/white"
+					android:textSize="25sp" />
+
+				<com.google.android.material.textfield.TextInputEditText
+					android:id="@+id/rectangle_12"
+					android:layout_width="373dp"
+					android:layout_height="51dp"
+					android:layout_marginStart="8dp"
+					android:layout_marginTop="607dp"
+					android:alpha="0.60000002384186"
+					android:background="@drawable/rectangle_1_shape"
+					android:gravity="center"
+					android:hint="00000 - 000"
+					android:textColor="@color/white"
+					android:textColorHint="@color/white"
+					android:textSize="25sp" />
+
+				<TextView
+					android:id="@+id/data_de_nascimento_"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal|center"
+					android:layout_marginStart="8dp"
+					android:layout_marginTop="671dp"
+					android:gravity="center"
+					android:shadowColor="#000000"
+					android:shadowDx="0"
+					android:shadowDy="4"
+					android:shadowRadius="4"
+					android:text="@string/data_de_nascimento__string"
+					android:textColor="@color/_bg__home_ek2_color"
+					android:textSize="26sp" />
+
+				<com.google.android.material.textfield.TextInputEditText
+					android:id="@+id/rectangle_14_ek1"
+					android:layout_width="373dp"
+					android:layout_height="51dp"
+					android:layout_marginStart="8dp"
+					android:layout_marginTop="702dp"
+					android:alpha="0.60000002384186"
+					android:background="@drawable/rectangle_1_shape"
+					android:gravity="center"
+					android:hint="00/00/0000"
+					android:textColor="@color/white"
+					android:textColorHint="@color/white"
+					android:textSize="25sp" />
+
+				<com.google.android.material.textfield.TextInputEditText
+					android:id="@+id/rectangle_13"
+					android:layout_width="373dp"
+					android:layout_height="51dp"
+					android:layout_marginStart="8dp"
+					android:layout_marginTop="320dp"
+					android:alpha="0.60000002384186"
+					android:background="@drawable/rectangle_1_shape"
+					android:gravity="center"
+					android:hint="123.456.789.01"
+					android:textColor="@color/white"
+					android:textColorHint="@color/white"
+					android:textSize="25sp" />
+
+				<Button
+					android:id="@+id/rectangle_15_ek1"
+					android:layout_width="146dp"
+					android:layout_height="43dp"
+					android:layout_marginStart="225dp"
+					android:layout_marginTop="767dp"
+					android:alpha="0.60000002384186"
+					android:background="@drawable/rectangle_1_shape"
+					android:gravity="center"
+					android:shadowColor="#000000"
+					android:shadowDx="0"
+					android:shadowDy="4"
+					android:shadowRadius="4"
+					android:text="Próximo"
+					android:textColor="@color/_bg__home_ek2_color"
+					android:textSize="26sp" />
+
+			</RelativeLayout>
+		</RelativeLayout>
+
+	</ScrollView>
+</HorizontalScrollView>
