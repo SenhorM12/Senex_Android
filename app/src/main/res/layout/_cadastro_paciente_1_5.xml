@@ -1,0 +1,412 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent" android:layout_height="wrap_content" >
+	<!-- 
+	/*
+	 *	This content is generated from the API File Info.
+	 *	(Alt+Shift+Ctrl+I).
+	 *
+	 *	@desc 		
+	 *	@file 		_cadastro_paciente_1_5
+	 *	@date 		Thursday 08th of September 2022 09:27:31 PM
+	 *	@title 		Page 1
+	 *	@author 	
+	 *	@keywords 	
+	 *	@generator 	Export Kit v1.3.figma
+	 *
+	 */
+	-->
+	<ScrollView android:id="@+id/_cadastro_paciente_1_5" 
+		android:layout_width="wrap_content" 
+		android:layout_height="match_parent" >
+
+		<RelativeLayout android:id="@+id/content_container" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" >
+
+			<View   android:id="@+id/_bg____cadastro_paciente_1_5"
+				android:background="@drawable/_bg____cadastro_paciente_1_5_shape"
+				 android:layout_marginStart="0dp"
+				android:layout_marginTop="0dp"
+				android:layout_width="390dp"
+				android:layout_height="844dp" />
+
+			<ImageView android:id="@+id/cor_de_fundo"
+				android:src="@drawable/cor_de_fundo"
+				android:contentDescription="cor_de_fundo"
+				 android:layout_marginStart="0dp"
+				android:layout_marginTop="0dp"
+				android:layout_width="390dp"
+				android:layout_height="844dp" />
+
+			<TextView android:id="@+id/nome_"
+				android:layout_gravity="center_horizontal|center"
+				android:gravity="center"
+				android:textSize="19sp"
+				android:shadowRadius="4"
+				android:shadowColor="#000000"
+				android:shadowDx="0"
+				android:shadowDy="4"
+				android:textColor="@color/_bg____cadastro_paciente_1_5_color"
+				android:layout_marginLeft="125dp"
+				android:layout_marginTop="88dp"
+				android:layout_width="115dp"
+				android:layout_height="38.5dp"
+				android:text="@string/nome__string"
+				 />
+
+			<TextView android:id="@+id/cpf_"
+				android:layout_gravity="center_horizontal|center"
+				android:gravity="center"
+				android:textSize="19sp"
+				android:shadowRadius="4"
+				android:shadowColor="#000000"
+				android:shadowDx="0"
+				android:shadowDy="4"
+				android:textColor="@color/_bg____cadastro_paciente_1_5_color"
+				android:layout_marginLeft="133dp"
+				android:layout_marginTop="122dp"
+				android:layout_width="85dp"
+				android:layout_height="38.5dp"
+				android:text="@string/cpf__string"
+				 />
+
+			<ImageView android:id="@+id/homem_perfil_caricatura_18591_58482_1"
+				android:src="@drawable/homem_perfil_caricatura_18591_58482_1"
+				android:contentDescription="homem_perfil_caricatura_18591_58482_1"
+				 android:layout_marginStart="12dp"
+				android:layout_marginTop="88dp"
+				android:layout_width="121dp"
+				android:layout_height="118dp" />
+
+			<TextView android:id="@+id/endere_o_"
+				android:layout_gravity="center_horizontal|center"
+				android:gravity="center"
+				android:textSize="19sp"
+				android:shadowRadius="4"
+				android:shadowColor="#000000"
+				android:shadowDx="0"
+				android:shadowDy="4"
+				android:textColor="@color/_bg____cadastro_paciente_1_5_color"
+				android:layout_marginLeft="120dp"
+				android:layout_marginTop="156dp"
+				android:layout_width="170dp"
+				android:layout_height="38.5dp"
+				android:text="@string/endere_o__string"
+				 />
+
+			<ImageView android:id="@+id/rectangle_9"
+				android:src="@drawable/rectangle_9"
+				android:contentDescription="rectangle_9"
+				 android:layout_marginStart="12dp"
+				android:layout_marginTop="286dp"
+				android:layout_width="363dp"
+				android:layout_height="432dp" />
+
+			<TextView android:id="@+id/sa_de_do_paciente"
+				android:layout_gravity="center_horizontal|center"
+				android:gravity="center"
+				android:textSize="26sp"
+				android:shadowRadius="4"
+				android:shadowColor="#000000"
+				android:shadowDx="0"
+				android:shadowDy="4"
+				android:textColor="@color/_bg____cadastro_paciente_1_5_color"
+				android:layout_marginLeft="84dp"
+				android:layout_marginTop="228dp"
+				android:layout_width="293dp"
+				android:layout_height="53dp"
+				android:text="@string/sa_de_do_paciente_string"
+				 />
+
+			<ImageView android:id="@+id/saude_1"
+				android:src="@drawable/saude_1"
+				android:contentDescription="saude_1"
+				 android:layout_marginStart="41dp"
+				android:layout_marginTop="224dp"
+				android:layout_width="42dp"
+				android:layout_height="43dp" />
+
+			<TextView android:id="@+id/tem_problema_do_cora__o_"
+				android:layout_gravity="center_horizontal|center"
+				android:gravity="center"
+				android:textSize="20sp"
+				android:shadowRadius="4"
+				android:shadowColor="#000000"
+				android:shadowDx="0"
+				android:shadowDy="4"
+				android:textColor="@color/_bg____cadastro_paciente_1_5_color"
+				android:layout_marginLeft="9dp"
+				android:layout_marginTop="296dp"
+				android:layout_width="256dp"
+				android:layout_height="55dp"
+				android:text="@string/tem_problema_do_cora__o__string"
+				 />
+
+			<TextView android:id="@+id/tem_diabetes_"
+				android:layout_gravity="center_horizontal|center"
+				android:gravity="center"
+				android:textSize="20sp"
+				android:shadowRadius="4"
+				android:shadowColor="#000000"
+				android:shadowDx="0"
+				android:shadowDy="4"
+				android:textColor="@color/_bg____cadastro_paciente_1_5_color"
+				android:layout_marginLeft="9dp"
+				android:layout_marginTop="403dp"
+				android:layout_width="183dp"
+				android:layout_height="49dp"
+				android:text="@string/tem_diabetes__string"
+				 />
+
+			<TextView android:id="@+id/tem_dst_"
+				android:layout_gravity="center_horizontal|center"
+				android:gravity="center"
+				android:textSize="20sp"
+				android:shadowRadius="4"
+				android:shadowColor="#000000"
+				android:shadowDx="0"
+				android:shadowDy="4"
+				android:textColor="@color/_bg____cadastro_paciente_1_5_color"
+				android:layout_marginLeft="9dp"
+				android:layout_marginTop="509dp"
+				android:layout_width="126dp"
+				android:layout_height="49dp"
+				android:text="@string/tem_dst__string"
+				 />
+
+			<TextView android:id="@+id/tem_press_o_alta_"
+				android:layout_gravity="center_horizontal|center"
+				android:gravity="center"
+				android:textSize="20sp"
+				android:shadowRadius="4"
+				android:shadowColor="#000000"
+				android:shadowDx="0"
+				android:shadowDy="4"
+				android:textColor="@color/_bg____cadastro_paciente_1_5_color"
+				android:layout_marginLeft="9dp"
+				android:layout_marginTop="613dp"
+				android:layout_width="225dp"
+				android:layout_height="49dp"
+				android:text="@string/tem_press_o_alta__string"
+				 />
+
+			<ImageView android:id="@+id/rectangle_14"
+				android:src="@drawable/rectangle_14"
+				android:contentDescription="rectangle_14"
+				 android:layout_marginStart="16dp"
+				android:layout_marginTop="337dp"
+				android:layout_width="72dp"
+				android:layout_height="46dp" />
+
+			<ImageView android:id="@+id/rectangle_15"
+				android:src="@drawable/rectangle_15"
+				android:contentDescription="rectangle_15"
+				 android:layout_marginStart="108dp"
+				android:layout_marginTop="337dp"
+				android:layout_width="72dp"
+				android:layout_height="46dp" />
+
+			<ImageView android:id="@+id/rectangle_16"
+				android:src="@drawable/rectangle_16"
+				android:contentDescription="rectangle_16"
+				 android:layout_marginStart="16dp"
+				android:layout_marginTop="443dp"
+				android:layout_width="72dp"
+				android:layout_height="46dp" />
+
+			<ImageView android:id="@+id/rectangle_17"
+				android:src="@drawable/rectangle_17"
+				android:contentDescription="rectangle_17"
+				 android:layout_marginStart="108dp"
+				android:layout_marginTop="443dp"
+				android:layout_width="72dp"
+				android:layout_height="46dp" />
+
+			<ImageView android:id="@+id/rectangle_18"
+				android:src="@drawable/rectangle_18"
+				android:contentDescription="rectangle_18"
+				 android:layout_marginStart="16dp"
+				android:layout_marginTop="549dp"
+				android:layout_width="72dp"
+				android:layout_height="46dp" />
+
+			<ImageView android:id="@+id/rectangle_19"
+				android:src="@drawable/rectangle_19"
+				android:contentDescription="rectangle_19"
+				 android:layout_marginStart="108dp"
+				android:layout_marginTop="549dp"
+				android:layout_width="72dp"
+				android:layout_height="46dp" />
+
+			<ImageView android:id="@+id/rectangle_20"
+				android:src="@drawable/rectangle_20"
+				android:contentDescription="rectangle_20"
+				 android:layout_marginStart="16dp"
+				android:layout_marginTop="653dp"
+				android:layout_width="72dp"
+				android:layout_height="46dp" />
+
+			<ImageView android:id="@+id/rectangle_21"
+				android:src="@drawable/rectangle_21"
+				android:contentDescription="rectangle_21"
+				 android:layout_marginStart="108dp"
+				android:layout_marginTop="653dp"
+				android:layout_width="72dp"
+				android:layout_height="46dp" />
+
+			<TextView android:id="@+id/sim"
+				android:layout_gravity="center_horizontal|center"
+				android:gravity="center"
+				android:textSize="19sp"
+				android:shadowRadius="4"
+				android:shadowColor="#000000"
+				android:shadowDx="0"
+				android:shadowDy="4"
+				android:textColor="@color/_bg____cadastro_paciente_1_5_color"
+				android:layout_marginLeft="12dp"
+				android:layout_marginTop="337dp"
+				android:layout_width="89dp"
+				android:layout_height="59.5dp"
+				android:text="@string/sim_string"
+				 />
+
+			<TextView android:id="@+id/sim_ek1"
+				android:layout_gravity="center_horizontal|center"
+				android:gravity="center"
+				android:textSize="19sp"
+				android:shadowRadius="4"
+				android:shadowColor="#000000"
+				android:shadowDx="0"
+				android:shadowDy="4"
+				android:textColor="@color/_bg____cadastro_paciente_1_5_color"
+				android:layout_marginLeft="12dp"
+				android:layout_marginTop="443dp"
+				android:layout_width="89dp"
+				android:layout_height="59.5dp"
+				android:text="@string/sim_ek1_string"
+				 />
+
+			<TextView android:id="@+id/sim_ek2"
+				android:layout_gravity="center_horizontal|center"
+				android:gravity="center"
+				android:textSize="19sp"
+				android:shadowRadius="4"
+				android:shadowColor="#000000"
+				android:shadowDx="0"
+				android:shadowDy="4"
+				android:textColor="@color/_bg____cadastro_paciente_1_5_color"
+				android:layout_marginLeft="12dp"
+				android:layout_marginTop="547dp"
+				android:layout_width="89dp"
+				android:layout_height="59.5dp"
+				android:text="@string/sim_ek2_string"
+				 />
+
+			<TextView android:id="@+id/sim_ek3"
+				android:layout_gravity="center_horizontal|center"
+				android:gravity="center"
+				android:textSize="19sp"
+				android:shadowRadius="4"
+				android:shadowColor="#000000"
+				android:shadowDx="0"
+				android:shadowDy="4"
+				android:textColor="@color/_bg____cadastro_paciente_1_5_color"
+				android:layout_marginLeft="12dp"
+				android:layout_marginTop="652dp"
+				android:layout_width="89dp"
+				android:layout_height="59.5dp"
+				android:text="@string/sim_ek3_string"
+				 />
+
+			<TextView android:id="@+id/n_o"
+				android:layout_gravity="center_horizontal|center"
+				android:gravity="center"
+				android:textSize="19sp"
+				android:shadowRadius="4"
+				android:shadowColor="#000000"
+				android:shadowDx="0"
+				android:shadowDy="4"
+				android:textColor="@color/_bg____cadastro_paciente_1_5_color"
+				android:layout_marginLeft="105dp"
+				android:layout_marginTop="337dp"
+				android:layout_width="88dp"
+				android:layout_height="59.5dp"
+				android:text="@string/n_o_string"
+				 />
+
+			<TextView android:id="@+id/n_o_ek1"
+				android:layout_gravity="center_horizontal|center"
+				android:gravity="center"
+				android:textSize="19sp"
+				android:shadowRadius="4"
+				android:shadowColor="#000000"
+				android:shadowDx="0"
+				android:shadowDy="4"
+				android:textColor="@color/_bg____cadastro_paciente_1_5_color"
+				android:layout_marginLeft="105dp"
+				android:layout_marginTop="443dp"
+				android:layout_width="88dp"
+				android:layout_height="59.5dp"
+				android:text="@string/n_o_ek1_string"
+				 />
+
+			<TextView android:id="@+id/n_o_ek2"
+				android:layout_gravity="center_horizontal|center"
+				android:gravity="center"
+				android:textSize="19sp"
+				android:shadowRadius="4"
+				android:shadowColor="#000000"
+				android:shadowDx="0"
+				android:shadowDy="4"
+				android:textColor="@color/_bg____cadastro_paciente_1_5_color"
+				android:layout_marginLeft="105dp"
+				android:layout_marginTop="549dp"
+				android:layout_width="88dp"
+				android:layout_height="59.5dp"
+				android:text="@string/n_o_ek2_string"
+				 />
+
+			<TextView android:id="@+id/n_o_ek3"
+				android:layout_gravity="center_horizontal|center"
+				android:gravity="center"
+				android:textSize="19sp"
+				android:shadowRadius="4"
+				android:shadowColor="#000000"
+				android:shadowDx="0"
+				android:shadowDy="4"
+				android:textColor="@color/_bg____cadastro_paciente_1_5_color"
+				android:layout_marginLeft="105dp"
+				android:layout_marginTop="653dp"
+				android:layout_width="88dp"
+				android:layout_height="59.5dp"
+				android:text="@string/n_o_ek3_string"
+				 />
+
+			<ImageView android:id="@+id/rectangle_16_ek1"
+				android:src="@drawable/rectangle_16_ek1"
+				android:contentDescription="rectangle_16_ek1"
+				 android:layout_marginStart="233dp"
+				android:layout_marginTop="763dp"
+				android:layout_width="152dp"
+				android:layout_height="47dp" />
+
+			<TextView android:id="@+id/_pr_ximo"
+				android:layout_gravity="center_horizontal|center"
+				android:gravity="center"
+				android:textSize="26sp"
+				android:shadowRadius="4"
+				android:shadowColor="#000000"
+				android:shadowDx="0"
+				android:shadowDy="4"
+				android:textColor="@color/_bg____cadastro_paciente_1_5_color"
+				android:layout_marginLeft="225dp"
+				android:layout_marginTop="763dp"
+				android:layout_width="174dp"
+				android:layout_height="65dp"
+				android:text="@string/_pr_ximo_string"
+				 />
+
+		</RelativeLayout>
+
+	</ScrollView>
+</HorizontalScrollView>

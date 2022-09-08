@@ -23,20 +23,22 @@
 			android:layout_width="wrap_content" 
 			android:layout_height="wrap_content" >
 
-			<View   android:id="@+id/_bg__tela_responsavel"
-				android:background="@drawable/_bg__tela_responsavel_shape"
-				 android:layout_marginStart="0dp"
-				android:layout_marginTop="0dp"
+			<View
+				android:id="@+id/_bg__tela_responsavel"
 				android:layout_width="390dp"
-				android:layout_height="844dp" />
+				android:layout_height="844dp"
+				android:layout_marginStart="0dp"
+				android:layout_marginTop="0dp"
+				android:background="@drawable/_bg__tela_responsavel_shape" />
 
-			<ImageView android:id="@+id/cor_de_fundo"
-				android:src="@drawable/cor_de_fundo"
-				android:contentDescription="cor_de_fundo"
-				 android:layout_marginStart="0dp"
-				android:layout_marginTop="0dp"
+			<ImageView
+				android:id="@+id/cor_de_fundo"
 				android:layout_width="390dp"
-				android:layout_height="844dp" />
+				android:layout_height="844dp"
+				android:layout_marginStart="0dp"
+				android:layout_marginTop="0dp"
+				android:contentDescription="cor_de_fundo"
+				android:src="@drawable/cor_de_fundo" />
 
 			<TextView
 				android:id="@+id/nome_"
@@ -54,21 +56,21 @@
 				android:textColor="@color/white"
 				android:textSize="19sp" />
 
-			<TextView android:id="@+id/cpf_"
+			<TextView
+				android:id="@+id/cpf_"
+				android:layout_width="85dp"
+				android:layout_height="38.5dp"
 				android:layout_gravity="center_horizontal|center"
+				android:layout_marginLeft="135dp"
+				android:layout_marginTop="109dp"
 				android:gravity="center"
-				android:textSize="19sp"
-				android:shadowRadius="4"
 				android:shadowColor="#000000"
 				android:shadowDx="0"
 				android:shadowDy="4"
-				android:textColor="@color/white"
-				android:layout_marginLeft="135dp"
-				android:layout_marginTop="109dp"
-				android:layout_width="85dp"
-				android:layout_height="38.5dp"
+				android:shadowRadius="4"
 				android:text="@string/cpf__string"
-				 />
+				android:textColor="@color/white"
+				android:textSize="19sp" />
 
 			<ImageView android:id="@+id/homem_perfil_caricatura_18591_58482_1"
 				android:src="@drawable/homem_perfil_caricatura_18591_58482_1"
@@ -102,13 +104,14 @@
 				android:layout_width="362dp"
 				android:layout_height="250dp" />
 
-			<ImageView android:id="@+id/rectangle_10"
-				android:src="@drawable/rectangle_10"
-				android:contentDescription="rectangle_10"
-				 android:layout_marginStart="13dp"
-				android:layout_marginTop="210dp"
+			<ImageView
+				android:id="@+id/rectangle_10"
 				android:layout_width="362dp"
-				android:layout_height="250dp" />
+				android:layout_height="250dp"
+				android:layout_marginStart="13dp"
+				android:layout_marginTop="210dp"
+				android:contentDescription="rectangle_10"
+				android:src="@drawable/rectangle_10" />
 
 			<ImageView
 				android:id="@+id/office_customer_female_light_icon_4"
@@ -165,15 +168,15 @@
 					android:textColor="@color/v__maria_color"
 					android:textSize="18sp" />
 
-				<TextView android:id="@+id/_10_15"
-					android:textSize="18sp"
-					android:textColor="@color/v__maria_color"
-					android:layout_marginStart="13dp"
-					android:layout_marginTop="20dp"
+				<TextView
+					android:id="@+id/_10_15"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
+					android:layout_marginStart="13dp"
+					android:layout_marginTop="20dp"
 					android:text="@string/_10_15_string"
-					 />
+					android:textColor="@color/v__maria_color"
+					android:textSize="18sp" />
 
 				<ImageView android:id="@+id/accept_icon_1"
 					android:src="@drawable/accept_icon_1"
@@ -227,15 +230,15 @@
 				android:layout_width="46.92dp"
 				android:layout_height="50dp" />
 
-			<TextView android:id="@+id/v__clara"
-				android:textSize="40sp"
-				android:textColor="@color/v__maria_color"
-				android:layout_marginLeft="114dp"
+			<TextView
+				android:id="@+id/v__clara"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="114dp"
 				android:layout_marginTop="491dp"
-				android:layout_width="204dp"
-				android:layout_height="76dp"
 				android:text="@string/v__clara_string"
-				 />
+				android:textColor="@color/v__maria_color"
+				android:textSize="40sp" />
 
 
 			<RelativeLayout android:id="@+id/group_8"
@@ -255,43 +258,43 @@
 
 				<TextView
 					android:id="@+id/rusovas___ems_ek1"
-					android:layout_width="360dp"
-					android:layout_height="40dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
 					android:layout_marginLeft="13dp"
 					android:layout_marginTop="62dp"
 					android:text="@string/rusovas___ems_ek1_string"
 					android:textColor="@color/v__maria_color"
 					android:textSize="18sp" />
 
-				<TextView android:id="@+id/_1_comprimido___10mg___branco_ek1"
-					android:textSize="18sp"
-					android:textColor="@color/v__maria_color"
+				<TextView
+					android:id="@+id/_1_comprimido___10mg___branco_ek1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
 					android:layout_marginLeft="13dp"
 					android:layout_marginTop="103dp"
-					android:layout_width="372dp"
-					android:layout_height="68dp"
 					android:text="@string/_1_comprimido___10mg___branco_ek1_string"
-					 />
-
-				<TextView android:id="@+id/_10_15_ek1"
-					android:textSize="18sp"
 					android:textColor="@color/v__maria_color"
+					android:textSize="18sp" />
+
+				<TextView
+					android:id="@+id/_10_15_ek1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
 					android:layout_marginLeft="13dp"
 					android:layout_marginTop="20dp"
-					android:layout_width="89.73dp"
-					android:layout_height="40.09dp"
 					android:text="@string/_10_15_ek1_string"
-					 />
-
-				<TextView android:id="@+id/__colesterol_ek1"
-					android:textSize="18sp"
 					android:textColor="@color/v__maria_color"
+					android:textSize="18sp" />
+
+				<TextView
+					android:id="@+id/__colesterol_ek1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
 					android:layout_marginLeft="13dp"
 					android:layout_marginTop="143dp"
-					android:layout_width="287dp"
-					android:layout_height="67dp"
 					android:text="@string/__colesterol_ek1_string"
-					 />
+					android:textColor="@color/v__maria_color"
+					android:textSize="18sp" />
 
 				<ImageView android:id="@+id/pencil_icon_1_ek1"
 					android:src="@drawable/pencil_icon_1_ek1"
@@ -340,7 +343,7 @@
 				android:shadowDy="4"
 				android:shadowRadius="4"
 				android:text="@string/_sair_string"
-				android:textColor="@color/_bg__tela_responsavel_color"
+				android:textColor="@color/white"
 				android:textSize="26sp" />
 
 			<ImageView android:id="@+id/rectangle_16"
@@ -351,21 +354,21 @@
 				android:layout_width="152dp"
 				android:layout_height="47dp" />
 
-			<TextView android:id="@+id/_config_"
+			<TextView
+				android:id="@+id/_config_"
+				android:layout_width="174dp"
+				android:layout_height="65dp"
 				android:layout_gravity="center_horizontal|center"
+				android:layout_marginLeft="22dp"
+				android:layout_marginTop="772dp"
 				android:gravity="center"
-				android:textSize="26sp"
-				android:shadowRadius="4"
 				android:shadowColor="#000000"
 				android:shadowDx="0"
 				android:shadowDy="4"
-				android:textColor="@color/_bg__tela_responsavel_color"
-				android:layout_marginLeft="22dp"
-				android:layout_marginTop="772dp"
-				android:layout_width="174dp"
-				android:layout_height="65dp"
+				android:shadowRadius="4"
 				android:text="@string/_config__string"
-				 />
+				android:textColor="@color/white"
+				android:textSize="26sp" />
 
 		</RelativeLayout>
 
