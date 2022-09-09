@@ -1,21 +1,4 @@
-
-	 
-	/*
-	 *	This content is generated from the API File Info.
-	 *	(Alt+Shift+Ctrl+I).
-	 *
-	 *	@desc 		
-	 *	@file 		tela_responsavel
-	 *	@date 		Thursday 08th of September 2022 09:27:52 PM
-	 *	@title 		Page 1
-	 *	@author 	
-	 *	@keywords 	
-	 *	@generator 	Export Kit v1.3.figma
-	 *
-	 */
-	
-
-package exportkit.figma;
+package br.com.fiap.Senex;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -26,7 +9,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.content.Intent;
 
-public class tela_responsavel_activity extends Activity {
+import exportkit.figma.R;
+
+	public class tela_responsavel_activity extends Activity {
 
 	
 	private View _bg__tela_responsavel;

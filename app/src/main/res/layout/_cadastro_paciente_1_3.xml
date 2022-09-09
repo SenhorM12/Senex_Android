@@ -46,10 +46,8 @@
 					android:id="@+id/nome_protegido"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:layout_gravity="center_horizontal|center"
 					android:layout_marginStart="8dp"
 					android:layout_marginTop="186dp"
-					android:gravity="center"
 					android:shadowColor="#000000"
 					android:shadowDx="0"
 					android:shadowDy="4"
@@ -133,6 +131,7 @@
 					android:background="@drawable/rectangle_1_shape"
 					android:gravity="center"
 					android:hint="Algenor"
+					android:inputType="text"
 					android:textColor="@color/white"
 					android:textColorHint="@color/white"
 					android:textSize="25sp" />
@@ -147,6 +146,7 @@
 					android:background="@drawable/rectangle_1_shape"
 					android:gravity="center"
 					android:hint="(00) 0000 - 0000"
+					android:inputType="phone"
 					android:textColor="@color/white"
 					android:textColorHint="@color/white"
 					android:textSize="25sp" />
@@ -161,6 +161,7 @@
 					android:background="@drawable/rectangle_1_shape"
 					android:gravity="center"
 					android:hint="Rua senex, 20"
+					android:inputType="textPostalAddress"
 					android:textColor="@color/white"
 					android:textColorHint="@color/white"
 					android:textSize="25sp" />
@@ -205,6 +206,7 @@
 					android:background="@drawable/rectangle_1_shape"
 					android:gravity="center"
 					android:hint="00/00/0000"
+					android:inputType="date"
 					android:textColor="@color/white"
 					android:textColorHint="@color/white"
 					android:textSize="25sp" />

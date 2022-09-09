@@ -1,5 +1,8 @@
-<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
-	android:layout_width="match_parent" android:layout_height="wrap_content" >
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
 
 	<ScrollView android:id="@+id/_cadastro_paciente_1_4" 
 		android:layout_width="wrap_content" 
@@ -15,7 +18,7 @@
 				android:layout_height="844dp"
 				android:layout_marginStart="0dp"
 				android:layout_marginTop="0dp"
-				android:background="@drawable/_bg____cadastro_paciente_1_4_shape" />
+				android:background="@drawable/cor_de_fundo" />
 
 			<ImageView
 				android:id="@+id/cor_de_fundo"
@@ -96,8 +99,8 @@
 
 			<TextView
 				android:id="@+id/sa_de_do_paciente"
-				android:layout_width="293dp"
-				android:layout_height="53dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
 				android:layout_gravity="center_horizontal|center"
 				android:layout_marginLeft="85dp"
 				android:layout_marginTop="217dp"
@@ -116,182 +119,70 @@
 				android:layout_height="43dp"
 				android:layout_marginStart="42dp"
 				android:layout_marginTop="213dp"
-				android:contentDescription="saude_1"
 				android:src="@drawable/saude_1" />
 
+			<com.google.android.material.textfield.TextInputEditText
+				android:id="@+id/rectangle_22"
+				android:layout_width="284dp"
+				android:layout_height="90dp"
+				android:layout_marginStart="42dp"
+				android:layout_marginTop="297dp"
+				android:alpha="0.60000002384186"
+				android:background="@drawable/rectangle_24"
+				android:gravity="center"
+				android:hint="Receita médica"
+				android:shadowColor="#000000"
+				android:shadowDx="0"
+				android:shadowDy="4"
+				android:shadowRadius="4"
+				android:textColor="@color/white"
+				android:textColorHint="@color/white"
+				android:textSize="26sp" />
 
-			<LinearLayout
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_alignStart="@+id/rectangle_9"
-				android:layout_alignTop="@+id/rectangle_9"
-				android:layout_marginStart="15dp"
-				android:layout_marginTop="15dp">
-
-				<ImageView
-					android:id="@+id/saude__1__1"
-					android:layout_width="45dp"
-					android:layout_height="50dp"
-					android:layout_gravity="center"
-					android:contentDescription="saude__1__1"
-					android:src="@drawable/saude__1__1" />
-
-				<com.google.android.material.textfield.TextInputEditText
-					android:id="@+id/rectangle_22"
-					android:layout_width="284dp"
-					android:layout_height="90dp"
-					android:alpha="0.60000002384186"
-					android:background="@drawable/rectangle_1_shape"
-					android:gravity="center"
-					android:hint="Adicionar Receita"
-					android:shadowColor="#000000"
-					android:shadowDx="0"
-					android:shadowDy="4"
-					android:shadowRadius="4"
-					android:textColor="@color/white"
-					android:textColorHint="@color/white"
-					android:textSize="26sp" />
-			</LinearLayout>
-
-			<ImageView
+			<TimePicker
 				android:id="@+id/rectangle_23"
 				android:layout_width="284dp"
 				android:layout_height="90dp"
 				android:layout_marginStart="42dp"
 				android:layout_marginTop="420dp"
-				android:contentDescription="rectangle_23"
-				android:src="@drawable/rectangle_23" />
+				android:background="@drawable/rectangle_24"
+				android:timePickerMode="spinner" />
 
-			<ImageView android:id="@+id/saude__1__2"
-				android:src="@drawable/saude__1__2"
-				android:contentDescription="saude__1__2"
-				 android:layout_marginStart="51dp"
-				android:layout_marginTop="440dp"
-				android:layout_width="45dp"
-				android:layout_height="50dp" />
-
-			<ImageView
+			<com.google.android.material.textfield.TextInputEditText
 				android:id="@+id/rectangle_24"
 				android:layout_width="284dp"
 				android:layout_height="90dp"
 				android:layout_marginStart="42dp"
 				android:layout_marginTop="531dp"
-				android:contentDescription="rectangle_24"
-				android:src="@drawable/rectangle_24" />
+				android:alpha="0.60000002384186"
+				android:background="@drawable/rectangle_24"
+				android:gravity="center"
+				android:hint="Medicamento"
+				android:shadowColor="#000000"
+				android:shadowDx="0"
+				android:shadowDy="4"
+				android:shadowRadius="4"
+				android:textColor="@color/white"
+				android:textColorHint="@color/white"
+				android:textSize="26sp" />
 
-			<ImageView android:id="@+id/rectangle_26"
-				android:src="@drawable/rectangle_26"
-				android:contentDescription="rectangle_26"
-				 android:layout_marginStart="157dp"
-				android:layout_marginTop="462dp"
-				android:layout_width="43dp"
-				android:layout_height="28dp" />
-
-			<ImageView android:id="@+id/rectangle_27"
-				android:src="@drawable/rectangle_27"
-				android:contentDescription="rectangle_27"
-				 android:layout_marginStart="217dp"
-				android:layout_marginTop="462dp"
-				android:layout_width="43dp"
-				android:layout_height="28dp" />
-
-			<ImageView android:id="@+id/saude__1__3"
-				android:src="@drawable/saude__1__3"
-				android:contentDescription="saude__1__3"
-				 android:layout_marginStart="51dp"
-				android:layout_marginTop="551dp"
-				android:layout_width="45dp"
-				android:layout_height="50dp" />
-
-			<ImageView
+			<com.google.android.material.textfield.TextInputEditText
 				android:id="@+id/rectangle_25"
 				android:layout_width="284dp"
 				android:layout_height="90dp"
 				android:layout_marginStart="42dp"
 				android:layout_marginTop="642dp"
-				android:contentDescription="rectangle_25"
-				android:src="@drawable/rectangle_25" />
-
-			<ImageView
-				android:id="@+id/saude__1__4"
-				android:layout_width="45dp"
-				android:layout_height="50dp"
-				android:layout_marginStart="51dp"
-				android:layout_marginTop="662dp"
-				android:contentDescription="saude__1__4"
-				android:src="@drawable/saude__1__4" />
-
-			<TextView
-				android:id="@+id/adicionar_rem_dio"
-				android:layout_width="232dp"
-				android:layout_height="50dp"
-				android:layout_gravity="center_horizontal|center"
-				android:layout_marginLeft="87dp"
-				android:layout_marginTop="555dp"
+				android:alpha="0.60000002384186"
+				android:background="@drawable/rectangle_24"
 				android:gravity="center"
+				android:hint="Quantidade"
 				android:shadowColor="#000000"
 				android:shadowDx="0"
 				android:shadowDy="4"
 				android:shadowRadius="4"
-				android:text="@string/adicionar_rem_dio_string"
 				android:textColor="@color/white"
-				android:textSize="20sp" />
-
-			<TextView
-				android:id="@+id/adicionar_quantidade_de_comprimido"
-				android:layout_width="232dp"
-				android:layout_height="86dp"
-				android:layout_gravity="center_horizontal|center"
-				android:layout_marginLeft="96dp"
-				android:layout_marginTop="654dp"
-				android:gravity="center"
-				android:shadowColor="#000000"
-				android:shadowDx="0"
-				android:shadowDy="4"
-				android:shadowRadius="4"
-				android:text="@string/adicionar_quantidade_de_comprimido_string"
-				android:textColor="@color/white"
-				android:textSize="20sp" />
-
-			<TextView
-				android:id="@+id/adicionar_hor_rio"
-				android:layout_width="193dp"
-				android:layout_height="50dp"
-				android:layout_gravity="center_horizontal|center"
-				android:layout_marginLeft="110dp"
-				android:layout_marginTop="422dp"
-				android:gravity="center"
-				android:shadowColor="#000000"
-				android:shadowDx="0"
-				android:shadowDy="4"
-				android:shadowRadius="4"
-				android:text="@string/adicionar_hor_rio_string"
-				android:textColor="@color/white"
-				android:textSize="20sp" />
-
-			<TextView
-				android:id="@+id/__"
-				android:layout_width="28dp"
-				android:layout_height="50dp"
-				android:layout_gravity="center_horizontal|center"
-				android:layout_marginLeft="199dp"
-				android:layout_marginTop="458dp"
-				android:gravity="center"
-				android:shadowColor="#000000"
-				android:shadowDx="0"
-				android:shadowDy="4"
-				android:shadowRadius="4"
-				android:text="@string/___string"
-				android:textColor="@color/white"
-				android:textSize="20sp" />
-
-			<ImageView android:id="@+id/hora_do_relogio_1"
-				android:src="@drawable/hora_do_relogio_1"
-				android:contentDescription="hora_do_relogio_1"
-				 android:layout_marginStart="119dp"
-				android:layout_marginTop="462dp"
-				android:layout_width="30dp"
-				android:layout_height="28dp" />
+				android:textColorHint="@color/white"
+				android:textSize="26sp" />
 
 			<Button
 				android:id="@+id/rectangle_16"

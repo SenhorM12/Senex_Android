@@ -1,4 +1,4 @@
-package br.com.fiap.myapplicationw;
+package br.com.fiap.Senex;
 
 import org.junit.Test;
 

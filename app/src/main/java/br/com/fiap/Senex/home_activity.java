@@ -1,6 +1,4 @@
-
-
-package exportkit.figma;
+package br.com.fiap.Senex;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -11,6 +9,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.content.Intent;
+
+import exportkit.figma.R;
 
 public class home_activity extends Activity {
 

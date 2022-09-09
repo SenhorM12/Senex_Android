@@ -6,7 +6,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "br.com.fiap.myapplicationw"
+        applicationId "br.com.fiap.Senex"
         minSdk 25
         targetSdk 32
         versionCode 1
