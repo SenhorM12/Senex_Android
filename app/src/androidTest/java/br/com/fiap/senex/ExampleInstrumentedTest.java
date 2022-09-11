@@ -1,4 +1,4 @@
-package br.com.fiap.Senex;
+package br.com.fiap.senex;
 
 import android.content.Context;
 

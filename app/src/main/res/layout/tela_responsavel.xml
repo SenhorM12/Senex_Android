@@ -1,20 +1,6 @@
 <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent" android:layout_height="wrap_content" >
-	<!-- 
-	/*
-	 *	This content is generated from the API File Info.
-	 *	(Alt+Shift+Ctrl+I).
-	 *
-	 *	@desc 		
-	 *	@file 		tela_responsavel
-	 *	@date 		Thursday 08th of September 2022 09:27:52 PM
-	 *	@title 		Page 1
-	 *	@author 	
-	 *	@keywords 	
-	 *	@generator 	Export Kit v1.3.figma
-	 *
-	 */
-	-->
+
 	<ScrollView android:id="@+id/tela_responsavel" 
 		android:layout_width="wrap_content" 
 		android:layout_height="match_parent" >
@@ -29,7 +15,7 @@
 				android:layout_height="844dp"
 				android:layout_marginStart="0dp"
 				android:layout_marginTop="0dp"
-				android:background="@drawable/_bg__tela_responsavel_shape" />
+				android:background="@drawable/cor_de_fundo" />
 
 			<ImageView
 				android:id="@+id/cor_de_fundo"

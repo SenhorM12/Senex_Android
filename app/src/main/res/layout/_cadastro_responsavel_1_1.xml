@@ -1,5 +1,6 @@
-<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
-	android:layout_width="match_parent" android:layout_height="wrap_content" >
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
 
 	<ScrollView android:id="@+id/_cadastro_responsavel_1_1" 
 		android:layout_width="wrap_content" 
@@ -32,7 +33,7 @@
 					android:layout_height="844dp" />
 
 				<TextView
-					android:id="@+id/nome_respons_vel_"
+					android:id="@+id/username"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:layout_marginStart="8dp"
@@ -47,7 +48,7 @@
 					android:textSize="26sp" />
 
 				<TextView
-					android:id="@+id/telefone_"
+					android:id="@+id/telefone"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:layout_marginStart="8dp"
@@ -57,7 +58,7 @@
 					android:shadowDx="0"
 					android:shadowDy="4"
 					android:shadowRadius="4"
-					android:text="@string/telefone__string"
+					android:text="Telefone(Somente número):"
 					android:textColor="@color/_bg__home_ek2_color"
 					android:textSize="26sp" />
 
@@ -77,7 +78,7 @@
 					android:textSize="26sp" />
 
 				<TextView
-					android:id="@+id/cep_"
+					android:id="@+id/senha1_1"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:layout_marginStart="8dp"
@@ -87,12 +88,12 @@
 					android:shadowDx="0"
 					android:shadowDy="4"
 					android:shadowRadius="4"
-					android:text="@string/cep__string"
+					android:text="Senha"
 					android:textColor="@color/_bg__home_ek2_color"
 					android:textSize="26sp" />
 
 				<TextView
-					android:id="@+id/cpf_"
+					android:id="@+id/cpf"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:layout_marginStart="8dp"
@@ -102,7 +103,7 @@
 					android:shadowDx="0"
 					android:shadowDy="4"
 					android:shadowRadius="4"
-					android:text="@string/cpf__string"
+					android:text="CPF(Opcional):"
 					android:textColor="@color/_bg__home_ek2_color"
 					android:textSize="26sp" />
 
@@ -115,7 +116,7 @@
 					android:layout_height="118dp" />
 
 				<com.google.android.material.textfield.TextInputEditText
-					android:id="@+id/rectangle_4"
+					android:id="@+id/usernameBox"
 					android:layout_width="367dp"
 					android:layout_height="47dp"
 					android:layout_marginStart="12dp"
@@ -123,14 +124,14 @@
 					android:alpha="0.60000002384186"
 					android:background="@drawable/rectangle_1_shape"
 					android:gravity="center"
-					android:hint="João Silva"
+					android:hint="Digite seu nome de usuário..."
 					android:inputType="text"
 					android:textColor="@color/white"
 					android:textColorHint="@color/white"
 					android:textSize="25sp" />
 
 				<com.google.android.material.textfield.TextInputEditText
-					android:id="@+id/rectangle_6"
+					android:id="@+id/telefoneBox"
 					android:layout_width="367dp"
 					android:layout_height="47dp"
 					android:layout_marginStart="12dp"
@@ -145,7 +146,7 @@
 					android:textSize="25sp" />
 
 				<com.google.android.material.textfield.TextInputEditText
-					android:id="@+id/rectangle_7"
+					android:id="@+id/userEmailBox"
 					android:layout_width="367dp"
 					android:layout_height="47dp"
 					android:layout_marginStart="12dp"
@@ -160,7 +161,7 @@
 					android:textSize="25sp" />
 
 				<com.google.android.material.textfield.TextInputEditText
-					android:id="@+id/rectangle_8"
+					android:id="@+id/senhaBox1_1"
 					android:layout_width="367dp"
 					android:layout_height="47dp"
 					android:layout_marginStart="12dp"
@@ -168,13 +169,14 @@
 					android:alpha="0.60000002384186"
 					android:background="@drawable/rectangle_1_shape"
 					android:gravity="center"
-					android:hint="00000 - 000"
+					android:hint="Digite sua senha..."
+					android:inputType="textPassword"
 					android:textColor="@color/white"
 					android:textColorHint="@color/white"
 					android:textSize="25sp" />
 
 				<com.google.android.material.textfield.TextInputEditText
-					android:id="@+id/rectangle_5"
+					android:id="@+id/cpfBox"
 					android:layout_width="367dp"
 					android:layout_height="47dp"
 					android:layout_marginStart="12dp"
@@ -188,7 +190,7 @@
 					android:textSize="25sp" />
 
 				<Button
-					android:id="@+id/rectangle_22"
+					android:id="@+id/registerButton"
 					android:layout_width="152dp"
 					android:layout_height="47dp"
 					android:layout_marginStart="225dp"

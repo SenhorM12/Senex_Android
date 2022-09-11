@@ -1,27 +1,26 @@
-package br.com.fiap.Senex;
+package br.com.fiap.senex;
 
-import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
-
-
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.content.Intent;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import exportkit.figma.R;
 
-	public class _cadastro_paciente_1_4_activity extends Activity {
+	public class _cadastro_paciente_1_4_activity extends AppCompatActivity {
 
 	
 	private View _bg____cadastro_paciente_1_4;
 	private ImageView cor_de_fundo;
-	private TextView nome_;
-	private TextView cpf_;
+	private TextView nome1_4;
+	private TextView cpf1_4;
 	private ImageView homem_perfil_caricatura_18591_58482_1;
-	private TextView endere_o_;
+	private TextView adress1_4;
 	private ImageView rectangle_9;
-	private TextView sa_de_do_paciente;
+	private TextView titleText;
 	private ImageView saude_1;
 	private ImageView rectangle_22;
 	private ImageView saude__1__1;

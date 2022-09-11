@@ -1,17 +1,14 @@
-package br.com.fiap.Senex;
+package br.com.fiap.senex;
 
-import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
-
-
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.content.Intent;
 
-import exportkit.figma.R;
+import androidx.appcompat.app.AppCompatActivity;
 
-	public class tela_responsavel_activity extends Activity {
+	public class tela_responsavel_activity extends AppCompatActivity {
 
 	
 	private View _bg__tela_responsavel;

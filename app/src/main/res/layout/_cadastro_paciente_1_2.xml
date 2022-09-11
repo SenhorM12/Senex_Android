@@ -43,7 +43,7 @@
 					android:src="@drawable/homem_perfil_caricatura_18591_58482_1_ek6" />
 
 				<TextView
-					android:id="@+id/nome_protegido"
+					android:id="@+id/nome1_2"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:layout_marginStart="8dp"
@@ -57,7 +57,7 @@
 					android:textSize="26sp" />
 
 				<TextView
-					android:id="@+id/telefone__ek1"
+					android:id="@+id/telefone1_2"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:layout_gravity="center_horizontal|center"
@@ -73,7 +73,7 @@
 					android:textSize="26sp" />
 
 				<TextView
-					android:id="@+id/endere_o__ek6"
+					android:id="@+id/adress1_2"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:layout_gravity="center_horizontal|center"
@@ -89,7 +89,7 @@
 					android:textSize="26sp" />
 
 				<TextView
-					android:id="@+id/cep__ek1"
+					android:id="@+id/cep1_2"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:layout_gravity="center_horizontal|center"
@@ -105,7 +105,7 @@
 					android:textSize="26sp" />
 
 				<TextView
-					android:id="@+id/cpf__ek6"
+					android:id="@+id/cpf1_2"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:layout_gravity="center_horizontal|center"
@@ -122,7 +122,7 @@
 
 
 				<com.google.android.material.textfield.TextInputEditText
-					android:id="@+id/rectangle_9_ek5"
+					android:id="@+id/nomeBox1_2"
 					android:layout_width="373dp"
 					android:layout_height="51dp"
 					android:layout_marginStart="8dp"
@@ -137,7 +137,7 @@
 					android:textSize="25sp" />
 
 				<com.google.android.material.textfield.TextInputEditText
-					android:id="@+id/rectangle_10_ek7"
+					android:id="@+id/telefoneBox1_2"
 					android:layout_width="373dp"
 					android:layout_height="51dp"
 					android:layout_marginStart="6dp"
@@ -152,7 +152,7 @@
 					android:textSize="25sp" />
 
 				<com.google.android.material.textfield.TextInputEditText
-					android:id="@+id/rectangle_11_ek2"
+					android:id="@+id/adressBox"
 					android:layout_width="373dp"
 					android:layout_height="51dp"
 					android:layout_marginStart="6dp"
@@ -167,7 +167,7 @@
 					android:textSize="25sp" />
 
 				<com.google.android.material.textfield.TextInputEditText
-					android:id="@+id/rectangle_12"
+					android:id="@+id/cepBox1_2"
 					android:layout_width="373dp"
 					android:layout_height="51dp"
 					android:layout_marginStart="8dp"
@@ -181,7 +181,7 @@
 					android:textSize="25sp" />
 
 				<TextView
-					android:id="@+id/data_de_nascimento_"
+					android:id="@+id/dtNasc"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:layout_gravity="center_horizontal|center"
@@ -197,7 +197,7 @@
 					android:textSize="26sp" />
 
 				<com.google.android.material.textfield.TextInputEditText
-					android:id="@+id/rectangle_14_ek1"
+					android:id="@+id/dtNascBox"
 					android:layout_width="373dp"
 					android:layout_height="51dp"
 					android:layout_marginStart="8dp"
@@ -212,7 +212,7 @@
 					android:textSize="25sp" />
 
 				<com.google.android.material.textfield.TextInputEditText
-					android:id="@+id/rectangle_13"
+					android:id="@+id/cpfBox1_2"
 					android:layout_width="373dp"
 					android:layout_height="51dp"
 					android:layout_marginStart="8dp"
@@ -226,7 +226,7 @@
 					android:textSize="25sp" />
 
 				<Button
-					android:id="@+id/rectangle_15_ek1"
+					android:id="@+id/nextButton"
 					android:layout_width="146dp"
 					android:layout_height="43dp"
 					android:layout_marginStart="225dp"
