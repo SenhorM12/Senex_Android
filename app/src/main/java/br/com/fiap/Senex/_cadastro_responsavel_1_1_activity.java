@@ -2,6 +2,7 @@ package br.com.fiap.senex;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -10,6 +11,16 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.textfield.TextInputEditText;
+
+import org.jetbrains.annotations.NotNull;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.nio.charset.Charset;
+
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.text.Charsets;
 
 public class _cadastro_responsavel_1_1_activity extends AppCompatActivity {
 
@@ -50,23 +61,37 @@ public class _cadastro_responsavel_1_1_activity extends AppCompatActivity {
 		userEmailBox = (TextInputEditText) findViewById(R.id.userEmailBox);
 		senhaBox1_1 = (TextInputEditText) findViewById(R.id.senhaBox1_1);
 		registerButton = (Button) findViewById(R.id.registerButton);
-	
-		
+
+
 		registerButton.setOnClickListener(new View.OnClickListener() {
-		
-			public void onClick(View v) {
-				
+			public final void onClick(View it) {
+				String data = usernameBox.getText() + ":" + cpfBox.getText() + ":" + telefoneBox.getText() + ":" + userEmailBox.getText() + ":" + senhaBox1_1.getText();
+				_cadastro_responsavel_1_1_activity.this.createUser("users", data);
+			}
+		});
+	}
+
+		public final void createUser(@NotNull String filename, @NotNull String data) {
+			Intrinsics.checkNotNullParameter(filename, "filename");
+			Intrinsics.checkNotNullParameter(data, "data");
+
+			try {
+				FileOutputStream fs = this.openFileOutput(filename, 0);
+				Charset var5 = Charsets.UTF_8;
+				byte[] var10001 = data.getBytes(var5);
+				Intrinsics.checkNotNullExpressionValue(var10001, "this as java.lang.String).getBytes(charset)");
+				fs.write(var10001);
+				fs.close();
+				} catch (FileNotFoundException var6) {
+					Log.i("createUser", "FileNotFoundException");
+				} catch (IOException var7) {
+					Log.i("createUser", "IOException");
+				}
+
 				Intent nextScreen = new Intent(getApplicationContext(), _cadastro_paciente_1_2_activity.class);
 				startActivity(nextScreen);
 			
 		
 			}
-		});
-		
-		
-		//custom code goes here
-	
-	}
-}
-	
+		}
 	
