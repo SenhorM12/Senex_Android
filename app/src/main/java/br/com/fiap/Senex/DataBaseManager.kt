@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper
 
 class DataBaseManager(context: Context, name: String?) : SQLiteOpenHelper(context,name,null,1)  {
 
-    override fun onCreate(db: SQLiteDatabase?) {
+    override fun onCreate(p0: SQLiteDatabase?) {
 
         val CREATE_TABLE = "CREATE TABLE USERS(\n" +
                 "\tID_USER INT NOT NULL,\n" +
@@ -19,12 +19,13 @@ class DataBaseManager(context: Context, name: String?) : SQLiteOpenHelper(contex
                 "\tSENHA VARCHAR(25) NOT NULL,\n" +
                 "\tPRIMARY KEY (ID_USER)\n" +
                 "\t);"
-        db?.execSQL(CREATE_TABLE)
+        p0?.execSQL(CREATE_TABLE)
     }
 
-    override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
+    override fun onUpgrade(p0: SQLiteDatabase?, p1: Int, p2: Int) {
+        p0?.execSQL("DROP TABLE IF EXISTS USERS")
 
-        db?.execSQL("UPDATE TABLE USERS(\n" +
+        p0?.execSQL("CREATE TABLE USERS(\n" +
                 "\tID_USER INT NOT NULL,\n" +
                 "\tNOME VARCHAR(50) NOT NULL,\n" +
                 "\tCPF VARCHAR(30),\n" +
@@ -50,15 +51,15 @@ class DataBaseManager(context: Context, name: String?) : SQLiteOpenHelper(contex
         db.insert("USERS","ID_USER",cv)
     }
 
-    fun loginTest(): Cursor {
+    fun loginTest(i: String, param: Any?): Cursor {
 
         val db = this.readableDatabase
         val cur = db.rawQuery("select email,senha from users",null)
         return cur
     }
 
-    fun removeSaudacao(){
-        val db = this.writableDatabase
-        db.delete("SAUDACAO","ID_SAUDACAO=1",null)
-    }
+//    fun registerUser(){
+//        val db = this.writableDatabase
+//        db.execSQL("INSERT INTO USERS(ID_USER, NOME, CPF, PHONE, EMAIL, SENHA) VALUES (ROWID, ?, ?, ?, ?, ?)")
+//    }
 }

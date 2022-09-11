@@ -1,12 +1,12 @@
 <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent" android:layout_height="wrap_content" >
 
-	<ScrollView android:id="@+id/tela_responsavel" 
-		android:layout_width="wrap_content" 
+	<ScrollView android:id="@+id/tela_responsavel"
+		android:layout_width="wrap_content"
 		android:layout_height="match_parent" >
 
-		<RelativeLayout android:id="@+id/content_container" 
-			android:layout_width="wrap_content" 
+		<RelativeLayout android:id="@+id/content_container"
+			android:layout_width="wrap_content"
 			android:layout_height="wrap_content" >
 
 			<View
@@ -27,12 +27,13 @@
 				android:src="@drawable/cor_de_fundo" />
 
 			<TextView
-				android:id="@+id/nome_"
-				android:layout_width="115dp"
-				android:layout_height="38.5dp"
+				android:id="@+id/nome_resp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
 				android:layout_gravity="center_horizontal|center"
-				android:layout_marginLeft="127dp"
-				android:layout_marginTop="75dp"
+				android:layout_marginStart="12dp"
+				android:layout_marginTop="77dp"
+				android:layout_toEndOf="@+id/homem_perfil_caricatura_18591_58482_1"
 				android:gravity="center"
 				android:shadowColor="#000000"
 				android:shadowDx="0"
@@ -43,12 +44,13 @@
 				android:textSize="19sp" />
 
 			<TextView
-				android:id="@+id/cpf_"
-				android:layout_width="85dp"
-				android:layout_height="38.5dp"
+				android:id="@+id/cpf_resp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
 				android:layout_gravity="center_horizontal|center"
-				android:layout_marginLeft="135dp"
-				android:layout_marginTop="109dp"
+				android:layout_marginStart="12dp"
+				android:layout_marginTop="111dp"
+				android:layout_toEndOf="@+id/homem_perfil_caricatura_18591_58482_1"
 				android:gravity="center"
 				android:shadowColor="#000000"
 				android:shadowDx="0"
@@ -61,43 +63,36 @@
 			<ImageView android:id="@+id/homem_perfil_caricatura_18591_58482_1"
 				android:src="@drawable/homem_perfil_caricatura_18591_58482_1"
 				android:contentDescription="homem_perfil_caricatura_18591_58482_1"
-				 android:layout_marginStart="14dp"
+				android:layout_marginStart="14dp"
 				android:layout_marginTop="75dp"
 				android:layout_width="121dp"
 				android:layout_height="118dp" />
 
 			<TextView
-				android:id="@+id/endere_o_"
-				android:layout_width="170dp"
-				android:layout_height="38.5dp"
+				android:id="@+id/adress_resp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
 				android:layout_gravity="center_horizontal|center"
-				android:layout_marginLeft="122dp"
-				android:layout_marginTop="143dp"
+				android:layout_marginStart="12dp"
+				android:layout_marginTop="145dp"
+				android:layout_toEndOf="@+id/homem_perfil_caricatura_18591_58482_1"
 				android:gravity="center"
 				android:shadowColor="#000000"
 				android:shadowDx="0"
 				android:shadowDy="4"
 				android:shadowRadius="4"
-				android:text="@string/endere_o__string"
+				android:text="Endereço"
 				android:textColor="@color/white"
 				android:textSize="19sp" />
 
 			<ImageView android:id="@+id/rectangle_9"
 				android:src="@drawable/rectangle_9"
 				android:contentDescription="rectangle_9"
-				 android:layout_marginStart="13dp"
+				android:layout_marginStart="13dp"
 				android:layout_marginTop="210dp"
 				android:layout_width="362dp"
 				android:layout_height="250dp" />
 
-			<ImageView
-				android:id="@+id/rectangle_10"
-				android:layout_width="362dp"
-				android:layout_height="250dp"
-				android:layout_marginStart="13dp"
-				android:layout_marginTop="210dp"
-				android:contentDescription="rectangle_10"
-				android:src="@drawable/rectangle_10" />
 
 			<ImageView
 				android:id="@+id/office_customer_female_light_icon_4"
@@ -109,7 +104,7 @@
 				android:src="@drawable/office_customer_female_light_icon_4" />
 
 			<TextView
-				android:id="@+id/v__maria"
+				android:id="@+id/nome_resp_add"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:layout_marginLeft="114dp"
@@ -119,7 +114,8 @@
 				android:textSize="40sp" />
 
 
-			<RelativeLayout android:id="@+id/group_7"
+			<RelativeLayout
+				android:id="@+id/group_7"
 				android:layout_marginTop="263dp"
 				android:layout_marginStart="13dp"
 				android:layout_width="wrap_content"
@@ -145,7 +141,7 @@
 					android:textSize="18sp" />
 
 				<TextView
-					android:id="@+id/_1_comprimido___10mg___branco"
+					android:id="@+id/comprimido_resp"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:layout_marginStart="13dp"
@@ -155,7 +151,7 @@
 					android:textSize="18sp" />
 
 				<TextView
-					android:id="@+id/_10_15"
+					android:id="@+id/horario_med"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:layout_marginStart="13dp"
@@ -167,13 +163,13 @@
 				<ImageView android:id="@+id/accept_icon_1"
 					android:src="@drawable/accept_icon_1"
 					android:contentDescription="accept_icon_1"
-					 android:layout_marginStart="304dp"
+					android:layout_marginStart="304dp"
 					android:layout_marginTop="132dp"
 					android:layout_width="46dp"
 					android:layout_height="48dp" />
 
 				<TextView
-					android:id="@+id/__colesterol"
+					android:id="@+id/motivo_med"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:layout_marginStart="13dp"
@@ -185,7 +181,7 @@
 				<ImageView android:id="@+id/pencil_icon_1"
 					android:src="@drawable/pencil_icon_1"
 					android:contentDescription="pencil_icon_1"
-					 android:layout_marginStart="277dp"
+					android:layout_marginStart="277dp"
 					android:layout_marginTop="9dp"
 					android:layout_width="27.42dp"
 					android:layout_height="36.94dp" />
@@ -193,7 +189,7 @@
 				<ImageView android:id="@+id/bin_2_icon_1"
 					android:src="@drawable/bin_2_icon_1"
 					android:contentDescription="bin_2_icon_1"
-					 android:layout_marginStart="323dp"
+					android:layout_marginStart="323dp"
 					android:layout_marginTop="9dp"
 					android:layout_width="27.42dp"
 					android:layout_height="36.94dp" />
@@ -203,7 +199,7 @@
 			<ImageView android:id="@+id/rectangle_11"
 				android:src="@drawable/rectangle_11"
 				android:contentDescription="rectangle_11"
-				 android:layout_marginStart="13dp"
+				android:layout_marginStart="13dp"
 				android:layout_marginTop="490dp"
 				android:layout_width="362dp"
 				android:layout_height="250dp" />
@@ -211,13 +207,13 @@
 			<ImageView android:id="@+id/office_customer_female_light_icon_5"
 				android:src="@drawable/office_customer_female_light_icon_5"
 				android:contentDescription="office_customer_female_light_icon_5"
-				 android:layout_marginStart="50dp"
+				android:layout_marginStart="50dp"
 				android:layout_marginTop="490dp"
 				android:layout_width="46.92dp"
 				android:layout_height="50dp" />
 
 			<TextView
-				android:id="@+id/v__clara"
+				android:id="@+id/nome_resp_2"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:layout_marginStart="114dp"
@@ -253,7 +249,7 @@
 					android:textSize="18sp" />
 
 				<TextView
-					android:id="@+id/_1_comprimido___10mg___branco_ek1"
+					android:id="@+id/comprimido_resp_2"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:layout_marginLeft="13dp"
@@ -263,7 +259,7 @@
 					android:textSize="18sp" />
 
 				<TextView
-					android:id="@+id/_10_15_ek1"
+					android:id="@+id/horario_med_2"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:layout_marginLeft="13dp"
@@ -273,7 +269,7 @@
 					android:textSize="18sp" />
 
 				<TextView
-					android:id="@+id/__colesterol_ek1"
+					android:id="@+id/motivo_med_2"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:layout_marginLeft="13dp"
@@ -285,7 +281,7 @@
 				<ImageView android:id="@+id/pencil_icon_1_ek1"
 					android:src="@drawable/pencil_icon_1_ek1"
 					android:contentDescription="pencil_icon_1_ek1"
-					 android:layout_marginStart="277dp"
+					android:layout_marginStart="277dp"
 					android:layout_marginTop="9dp"
 					android:layout_width="27.42dp"
 					android:layout_height="36.94dp" />
@@ -293,7 +289,7 @@
 				<ImageView android:id="@+id/bin_2_icon_1_ek1"
 					android:src="@drawable/bin_2_icon_1_ek1"
 					android:contentDescription="bin_2_icon_1_ek1"
-					 android:layout_marginStart="323dp"
+					android:layout_marginStart="323dp"
 					android:layout_marginTop="9dp"
 					android:layout_width="27.42dp"
 					android:layout_height="36.94dp" />
@@ -303,26 +299,20 @@
 			<ImageView android:id="@+id/_accept_icon_1_ek1"
 				android:src="@drawable/_accept_icon_1_ek1"
 				android:contentDescription="_accept_icon_1_ek1"
-				 android:layout_marginStart="318dp"
+				android:layout_marginStart="318dp"
 				android:layout_marginTop="674dp"
 				android:layout_width="45dp"
 				android:layout_height="49dp" />
 
-			<ImageView android:id="@+id/rectangle_22"
-				android:src="@drawable/rectangle_22"
-				android:contentDescription="rectangle_22"
-				 android:layout_marginStart="230dp"
-				android:layout_marginTop="772dp"
-				android:layout_width="152dp"
-				android:layout_height="47dp" />
-
-			<TextView
-				android:id="@+id/_sair"
+			<Button
+				android:id="@+id/sair_resp"
 				android:layout_width="174dp"
-				android:layout_height="65dp"
+				android:layout_height="45dp"
 				android:layout_gravity="center_horizontal|center"
 				android:layout_marginLeft="222dp"
 				android:layout_marginTop="772dp"
+				android:alpha="0.60000002384186"
+				android:background="@drawable/_rectangle_3_shape"
 				android:gravity="center"
 				android:shadowColor="#000000"
 				android:shadowDx="0"
@@ -332,21 +322,16 @@
 				android:textColor="@color/white"
 				android:textSize="26sp" />
 
-			<ImageView android:id="@+id/rectangle_16"
-				android:src="@drawable/rectangle_16"
-				android:contentDescription="rectangle_16"
-				 android:layout_marginStart="30dp"
-				android:layout_marginTop="772dp"
-				android:layout_width="152dp"
-				android:layout_height="47dp" />
 
-			<TextView
-				android:id="@+id/_config_"
+			<Button
+				android:id="@+id/config_resp"
 				android:layout_width="174dp"
-				android:layout_height="65dp"
+				android:layout_height="45dp"
 				android:layout_gravity="center_horizontal|center"
 				android:layout_marginLeft="22dp"
 				android:layout_marginTop="772dp"
+				android:alpha="0.60000002384186"
+				android:background="@drawable/_rectangle_3_shape"
 				android:gravity="center"
 				android:shadowColor="#000000"
 				android:shadowDx="0"
@@ -355,6 +340,7 @@
 				android:text="@string/_config__string"
 				android:textColor="@color/white"
 				android:textSize="26sp" />
+
 
 		</RelativeLayout>
 

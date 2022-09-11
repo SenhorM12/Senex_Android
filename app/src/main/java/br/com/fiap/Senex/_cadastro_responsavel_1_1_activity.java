@@ -42,7 +42,7 @@ public class _cadastro_responsavel_1_1_activity extends AppCompatActivity {
 		telefone = (TextView) findViewById(R.id.telefone);
 		userEmail = (TextView) findViewById(R.id.userEmail);
 		senha1_1 = (TextView) findViewById(R.id.senha1_1);
-		cpf = (TextView) findViewById(R.id.cpf_);
+		cpf = (TextView) findViewById(R.id.cpf);
 		homem_perfil_caricatura_18591_58482_1 = (ImageView) findViewById(R.id.homem_perfil_caricatura_18591_58482_1);
 		usernameBox = (TextInputEditText) findViewById(R.id.usernameBox);
 		cpfBox = (TextInputEditText) findViewById(R.id.cpfBox);

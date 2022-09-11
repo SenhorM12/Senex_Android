@@ -43,8 +43,7 @@ public class home_activity extends AppCompatActivity {
 
 
 		enterButton.setOnClickListener(new View.OnClickListener() {
-		
-			public void onClick(View v) {
+			public  void onClick(View v) {
 				
 				Intent nextScreen = new Intent(getApplicationContext(), tela_responsavel_activity.class);
 				startActivity(nextScreen);
@@ -64,9 +63,6 @@ public class home_activity extends AppCompatActivity {
 		
 			}
 		});
-		
-		
-		//custom code goes here
 	
 	}
 }

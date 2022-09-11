@@ -63,13 +63,14 @@
 				android:textColor="@color/white"
 				android:textSize="19sp" />
 
-			<ImageView android:id="@+id/homem_perfil_caricatura_18591_58482_1"
-				android:src="@drawable/homem_perfil_caricatura_18591_58482_1"
-				android:contentDescription="homem_perfil_caricatura_18591_58482_1"
-				 android:layout_marginStart="13dp"
-				android:layout_marginTop="77dp"
+			<ImageView
+				android:id="@+id/homem_perfil_caricatura_18591_58482_1"
 				android:layout_width="121dp"
-				android:layout_height="118dp" />
+				android:layout_height="118dp"
+				android:layout_marginStart="13dp"
+				android:layout_marginTop="77dp"
+				android:contentDescription="homem_perfil_caricatura_18591_58482_1"
+				android:src="@drawable/homem_perfil_caricatura_18591_58482_1" />
 
 			<TextView
 				android:id="@+id/adress1_4"
