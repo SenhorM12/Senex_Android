@@ -69,7 +69,7 @@
 				android:layout_height="118dp" />
 
 			<TextView
-				android:id="@+id/adress_resp"
+				android:id="@+id/number_resp"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:layout_gravity="center_horizontal|center"
@@ -81,7 +81,6 @@
 				android:shadowDx="0"
 				android:shadowDy="4"
 				android:shadowRadius="4"
-				android:text="Endereço"
 				android:textColor="@color/white"
 				android:textSize="19sp" />
 
@@ -196,113 +195,6 @@
 
 			</RelativeLayout>
 
-			<ImageView android:id="@+id/rectangle_11"
-				android:src="@drawable/rectangle_11"
-				android:contentDescription="rectangle_11"
-				android:layout_marginStart="13dp"
-				android:layout_marginTop="490dp"
-				android:layout_width="362dp"
-				android:layout_height="250dp" />
-
-			<ImageView android:id="@+id/office_customer_female_light_icon_5"
-				android:src="@drawable/office_customer_female_light_icon_5"
-				android:contentDescription="office_customer_female_light_icon_5"
-				android:layout_marginStart="50dp"
-				android:layout_marginTop="490dp"
-				android:layout_width="46.92dp"
-				android:layout_height="50dp" />
-
-			<TextView
-				android:id="@+id/nome_resp_2"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_marginStart="114dp"
-				android:layout_marginTop="491dp"
-				android:text="@string/v__clara_string"
-				android:textColor="@color/v__maria_color"
-				android:textSize="40sp" />
-
-
-			<RelativeLayout android:id="@+id/group_8"
-				android:layout_marginTop="543dp"
-				android:layout_marginStart="13dp"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				>
-
-				<View
-					android:id="@+id/rectangle_10_ek2"
-					android:layout_width="368dp"
-					android:layout_height="199.31dp"
-					android:layout_marginStart="0dp"
-					android:layout_marginTop="0dp"
-					android:background="@drawable/rectangle_10_ek2_shape" />
-
-				<TextView
-					android:id="@+id/rusovas___ems_ek1"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:layout_marginLeft="13dp"
-					android:layout_marginTop="62dp"
-					android:text="@string/rusovas___ems_ek1_string"
-					android:textColor="@color/v__maria_color"
-					android:textSize="18sp" />
-
-				<TextView
-					android:id="@+id/comprimido_resp_2"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:layout_marginLeft="13dp"
-					android:layout_marginTop="103dp"
-					android:text="@string/_1_comprimido___10mg___branco_ek1_string"
-					android:textColor="@color/v__maria_color"
-					android:textSize="18sp" />
-
-				<TextView
-					android:id="@+id/horario_med_2"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:layout_marginLeft="13dp"
-					android:layout_marginTop="20dp"
-					android:text="@string/_10_15_ek1_string"
-					android:textColor="@color/v__maria_color"
-					android:textSize="18sp" />
-
-				<TextView
-					android:id="@+id/motivo_med_2"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:layout_marginLeft="13dp"
-					android:layout_marginTop="143dp"
-					android:text="@string/__colesterol_ek1_string"
-					android:textColor="@color/v__maria_color"
-					android:textSize="18sp" />
-
-				<ImageView android:id="@+id/pencil_icon_1_ek1"
-					android:src="@drawable/pencil_icon_1_ek1"
-					android:contentDescription="pencil_icon_1_ek1"
-					android:layout_marginStart="277dp"
-					android:layout_marginTop="9dp"
-					android:layout_width="27.42dp"
-					android:layout_height="36.94dp" />
-
-				<ImageView android:id="@+id/bin_2_icon_1_ek1"
-					android:src="@drawable/bin_2_icon_1_ek1"
-					android:contentDescription="bin_2_icon_1_ek1"
-					android:layout_marginStart="323dp"
-					android:layout_marginTop="9dp"
-					android:layout_width="27.42dp"
-					android:layout_height="36.94dp" />
-
-			</RelativeLayout>
-
-			<ImageView android:id="@+id/_accept_icon_1_ek1"
-				android:src="@drawable/_accept_icon_1_ek1"
-				android:contentDescription="_accept_icon_1_ek1"
-				android:layout_marginStart="318dp"
-				android:layout_marginTop="674dp"
-				android:layout_width="45dp"
-				android:layout_height="49dp" />
 
 			<Button
 				android:id="@+id/sair_resp"
@@ -324,7 +216,7 @@
 
 
 			<Button
-				android:id="@+id/config_resp"
+				android:id="@+id/add_prt"
 				android:layout_width="174dp"
 				android:layout_height="45dp"
 				android:layout_gravity="center_horizontal|center"
@@ -337,7 +229,7 @@
 				android:shadowDx="0"
 				android:shadowDy="4"
 				android:shadowRadius="4"
-				android:text="@string/_config__string"
+				android:text="Adicionar"
 				android:textColor="@color/white"
 				android:textSize="26sp" />
 

@@ -2,6 +2,7 @@ package br.com.fiap.senex;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -11,9 +12,19 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.textfield.TextInputEditText;
 
+import org.jetbrains.annotations.NotNull;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.nio.charset.Charset;
+
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.text.Charsets;
+
 public class _cadastro_paciente_1_2_activity extends AppCompatActivity {
 
-	
+
 	private View _bg____cadastro_paciente_1_3_ek2;
 	private ImageView cor_de_fundo_ek7;
 	private ImageView homem_perfil_caricatura_18591_58482_1_ek6;
@@ -53,23 +64,39 @@ public class _cadastro_paciente_1_2_activity extends AppCompatActivity {
 		cepBox1_2 = (TextInputEditText) findViewById(R.id.cepBox1_2);
 		dtNascBox = (TextInputEditText) findViewById(R.id.dtNascBox);
 		nextButton = (Button) findViewById(R.id.nextButton);
-	
-		
+
+
 		nextButton.setOnClickListener(new View.OnClickListener() {
-		
-			public void onClick(View v) {
-				
-				Intent nextScreen = new Intent(getApplicationContext(), _cadastro_paciente_1_4_activity.class);
-				startActivity(nextScreen);
-			
-		
+			public final void onClick(View it) {
+				String data = nomeBox1_2.getText() + ":" + telefoneBox1_2.getText() + ":" + adressBox.getText() + ":" + cepBox1_2.getText() + ":" + dtNascBox.getText();
+				_cadastro_paciente_1_2_activity.this.createProtegido("protegido", data);
 			}
 		});
-		
-		
-		//custom code goes here
-	
+	}
+
+	public final void createProtegido(@NotNull String filename, @NotNull String data) {
+		Intrinsics.checkNotNullParameter(filename, "filename");
+		Intrinsics.checkNotNullParameter(data, "data");
+
+		try {
+			FileOutputStream fs = this.openFileOutput(filename, 0);
+			Charset var5 = Charsets.UTF_8;
+			byte[] var10001 = data.getBytes(var5);
+			Intrinsics.checkNotNullExpressionValue(var10001, "this as java.lang.String).getBytes(charset)");
+			fs.write(var10001);
+			fs.close();
+		} catch (FileNotFoundException var6) {
+			Log.i("createProtegido", "FileNotFoundException");
+		} catch (IOException var7) {
+			Log.i("createProtegido", "IOException");
+		}
+
+		Intent nextScreen = new Intent(getApplicationContext(), _cadastro_paciente_1_4_activity.class);
+		startActivity(nextScreen);
+
+
 	}
 }
+
 	
 	
