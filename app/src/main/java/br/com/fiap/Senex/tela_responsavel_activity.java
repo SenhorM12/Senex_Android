@@ -9,6 +9,18 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import org.jetbrains.annotations.NotNull;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.charset.Charset;
+import java.util.StringTokenizer;
+
+import kotlin.io.ByteStreamsKt;
+import kotlin.jvm.internal.Intrinsics;
+
 public class tela_responsavel_activity extends AppCompatActivity {
 
 
@@ -17,7 +29,7 @@ public class tela_responsavel_activity extends AppCompatActivity {
 	private TextView nome_resp;
 	private TextView cpf_resp;
 	private ImageView homem_perfil_caricatura_18591_58482_1;
-	private TextView adress_resp;
+	private TextView number_resp;
 	private ImageView rectangle_9;
 	private ImageView office_customer_female_light_icon_4;
 	private TextView nome_resp_add;
@@ -41,7 +53,7 @@ public class tela_responsavel_activity extends AppCompatActivity {
 	private ImageView bin_2_icon_1_ek1;
 	private ImageView _accept_icon_1_ek1;
 	private Button sair_resp;
-	private Button config_resp;
+	private Button add_prt;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -55,7 +67,7 @@ public class tela_responsavel_activity extends AppCompatActivity {
 		nome_resp = (TextView) findViewById(R.id.nome_resp);
 		cpf_resp = (TextView) findViewById(R.id.cpf_resp);
 		homem_perfil_caricatura_18591_58482_1 = (ImageView) findViewById(R.id.homem_perfil_caricatura_18591_58482_1);
-		adress_resp = (TextView) findViewById(R.id.adress_resp);
+		number_resp = (TextView) findViewById(R.id.number_resp);
 		rectangle_9 = (ImageView) findViewById(R.id.rectangle_9);
 		office_customer_female_light_icon_4 = (ImageView) findViewById(R.id.office_customer_female_light_icon_4);
 		nome_resp_add = (TextView) findViewById(R.id.nome_resp_add);
@@ -67,31 +79,33 @@ public class tela_responsavel_activity extends AppCompatActivity {
 		motivo_med = (TextView) findViewById(R.id.motivo_med);
 		pencil_icon_1 = (ImageView) findViewById(R.id.pencil_icon_1);
 		bin_2_icon_1 = (ImageView) findViewById(R.id.bin_2_icon_1);
-		rectangle_11 = (ImageView) findViewById(R.id.rectangle_11);
-		office_customer_female_light_icon_5 = (ImageView) findViewById(R.id.office_customer_female_light_icon_5);
-		nome_resp_2 = (TextView) findViewById(R.id.nome_resp_2);
-		rectangle_10_ek2 = (View) findViewById(R.id.rectangle_10_ek2);
-		rusovas___ems_ek1 = (TextView) findViewById(R.id.rusovas___ems_ek1);
-		comprimido_resp_2 = (TextView) findViewById(R.id.comprimido_resp_2);
-		horario_med_2 = (TextView) findViewById(R.id.horario_med_2);
-		motivo_med_2 = (TextView) findViewById(R.id.motivo_med_2);
-		pencil_icon_1_ek1 = (ImageView) findViewById(R.id.pencil_icon_1_ek1);
-		bin_2_icon_1_ek1 = (ImageView) findViewById(R.id.bin_2_icon_1_ek1);
-		_accept_icon_1_ek1 = (ImageView) findViewById(R.id._accept_icon_1_ek1);
 		sair_resp = (Button) findViewById(R.id.sair_resp);
-		config_resp = (Button) findViewById(R.id.config_resp);
+		add_prt = (Button) findViewById(R.id.add_prt);
 
+		String data = this.retrieveUser("user");
+		StringTokenizer tokenizer = new StringTokenizer(data, ":");
+		String nome = tokenizer.hasMoreTokens() ? tokenizer.nextToken() : "Responsável";
+		String cpf = tokenizer.hasMoreTokens() ? tokenizer.nextToken() : "";
+		String number = tokenizer.hasMoreTokens() ? tokenizer.nextToken() : "";
+		nome_resp.setText((CharSequence)nome);
+		cpf_resp.setText((CharSequence)cpf);
+		number_resp.setText((CharSequence)number);
 
-		_accept_icon_1_ek1.setOnClickListener(new View.OnClickListener() {
+		String data1 = this.retrieveUser1("protegido");
+		StringTokenizer tokenizer1 = new StringTokenizer(data1, ":");
+		String nome1 = tokenizer1.hasMoreTokens() ? tokenizer1.nextToken() : "";
+		nome_resp_add.setText((CharSequence)nome1);
 
-			public void onClick(View v) {
-
-				Intent nextScreen = new Intent(getApplicationContext(), tela_responsavel_activity.class);
-				startActivity(nextScreen);
-
-
-			}
-		});
+		String data2 = this.retrieveUser2("paciente");
+		StringTokenizer tokenizer2 = new StringTokenizer(data2, ":");
+		String horario = tokenizer2.hasMoreTokens() ? tokenizer2.nextToken() : "";
+		String remedio = tokenizer2.hasMoreTokens() ? tokenizer2.nextToken() : "";
+		String quantidade = tokenizer2.hasMoreTokens() ? tokenizer2.nextToken() : "";
+		String receita = tokenizer2.hasMoreTokens() ? tokenizer2.nextToken() : "";
+		horario_med.setText((CharSequence)horario + "Hr");
+		rusovas___ems.setText((CharSequence)remedio);
+		comprimido_resp.setText((CharSequence)quantidade);
+		motivo_med.setText((CharSequence)receita);
 
 
 		sair_resp.setOnClickListener(new View.OnClickListener() {
@@ -106,11 +120,11 @@ public class tela_responsavel_activity extends AppCompatActivity {
 		});
 
 
-		config_resp.setOnClickListener(new View.OnClickListener() {
+		add_prt.setOnClickListener(new View.OnClickListener() {
 
 			public void onClick(View v) {
 
-				Intent nextScreen = new Intent(getApplicationContext(), _cadastro_responsavel_1_1_activity.class);
+				Intent nextScreen = new Intent(getApplicationContext(), _cadastro_paciente_1_2_activity.class);
 				startActivity(nextScreen);
 
 
@@ -118,5 +132,68 @@ public class tela_responsavel_activity extends AppCompatActivity {
 		});
 
 	}
+	@NotNull
+	public final String retrieveUser(@NotNull String filename) {
+		Intrinsics.checkNotNullParameter(filename, "filename");
+
+		try {
+			FileInputStream fi = this.openFileInput(filename);
+			Intrinsics.checkNotNullExpressionValue(fi, "fi");
+			byte[] data = ByteStreamsKt.readBytes((InputStream)fi);
+			fi.close();
+			data.toString();
+			Charset var10000 = Charset.defaultCharset();
+			Intrinsics.checkNotNullExpressionValue(var10000, "Charset.defaultCharset()");
+			Charset var5 = var10000;
+			return new String(data, var5);
+		} catch (FileNotFoundException var6) {
+			return "";
+		} catch (IOException var7) {
+			return "";
+		}
+	}
+
+	@NotNull
+	public final String retrieveUser1(@NotNull String filename) {
+		Intrinsics.checkNotNullParameter(filename, "filename");
+
+		try {
+			FileInputStream fi1 = this.openFileInput(filename);
+			Intrinsics.checkNotNullExpressionValue(fi1, "fi1");
+			byte[] data1 = ByteStreamsKt.readBytes((InputStream)fi1);
+			fi1.close();
+			data1.toString();
+			Charset var10000 = Charset.defaultCharset();
+			Intrinsics.checkNotNullExpressionValue(var10000, "Charset.defaultCharset()");
+			Charset var5 = var10000;
+			return new String(data1, var5);
+		} catch (FileNotFoundException var6) {
+			return "";
+		} catch (IOException var7) {
+			return "";
+		}
+	}
+
+	@NotNull
+	public final String retrieveUser2(@NotNull String filename) {
+		Intrinsics.checkNotNullParameter(filename, "filename");
+
+		try {
+			FileInputStream fi2 = this.openFileInput(filename);
+			Intrinsics.checkNotNullExpressionValue(fi2, "fi2");
+			byte[] data2 = ByteStreamsKt.readBytes((InputStream)fi2);
+			fi2.close();
+			data2.toString();
+			Charset var10000 = Charset.defaultCharset();
+			Intrinsics.checkNotNullExpressionValue(var10000, "Charset.defaultCharset()");
+			Charset var5 = var10000;
+			return new String(data2, var5);
+		} catch (FileNotFoundException var6) {
+			return "";
+		} catch (IOException var7) {
+			return "";
+		}
+	}
 }
+
 	
