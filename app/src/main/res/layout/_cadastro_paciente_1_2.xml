@@ -1,5 +1,6 @@
-<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
-	android:layout_width="match_parent" android:layout_height="wrap_content" >
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
 
 	<ScrollView android:id="@+id/_cadastro_paciente_1_3" 
 		android:layout_width="wrap_content" 
@@ -29,8 +30,9 @@
 					android:id="@+id/cor_de_fundo_ek3"
 					android:layout_width="fill_parent"
 					android:layout_height="fill_parent"
+					android:layout_alignParentTop="true"
 					android:layout_marginStart="0dp"
-					android:layout_marginTop="0dp"
+					android:layout_marginTop="2dp"
 					android:background="@drawable/cor_de_fundo_ek3" />
 
 				<ImageView
@@ -228,7 +230,7 @@
 				<Button
 					android:id="@+id/nextButton"
 					android:layout_width="146dp"
-					android:layout_height="43dp"
+					android:layout_height="48dp"
 					android:layout_marginStart="225dp"
 					android:layout_marginTop="767dp"
 					android:alpha="0.60000002384186"

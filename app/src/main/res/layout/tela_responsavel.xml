@@ -1,5 +1,6 @@
-<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
-	android:layout_width="match_parent" android:layout_height="wrap_content" >
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
 
 	<ScrollView android:id="@+id/tela_responsavel"
 		android:layout_width="wrap_content"
@@ -106,7 +107,7 @@
 				android:id="@+id/nome_resp_add"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:layout_marginLeft="114dp"
+				android:layout_marginStart="114dp"
 				android:layout_marginTop="211dp"
 				android:text="@string/v__maria_string"
 				android:textColor="@color/v__maria_color"
@@ -201,7 +202,7 @@
 				android:layout_width="174dp"
 				android:layout_height="45dp"
 				android:layout_gravity="center_horizontal|center"
-				android:layout_marginLeft="222dp"
+				android:layout_marginStart="222dp"
 				android:layout_marginTop="772dp"
 				android:alpha="0.60000002384186"
 				android:background="@drawable/_rectangle_3_shape"
@@ -220,7 +221,7 @@
 				android:layout_width="174dp"
 				android:layout_height="45dp"
 				android:layout_gravity="center_horizontal|center"
-				android:layout_marginLeft="22dp"
+				android:layout_marginStart="22dp"
 				android:layout_marginTop="772dp"
 				android:alpha="0.60000002384186"
 				android:background="@drawable/_rectangle_3_shape"

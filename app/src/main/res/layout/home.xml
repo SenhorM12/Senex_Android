@@ -1,139 +1,134 @@
-<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
-	android:layout_width="match_parent" android:layout_height="wrap_content" >
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/cor_de_fundo"
+	android:id="@+id/home">
 
-	<ScrollView android:id="@+id/home"
+	<TextView
+		android:id="@+id/registerButtonHome"
 		android:layout_width="wrap_content"
-		android:layout_height="match_parent" >
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal|center"
+		android:layout_marginTop="10dp"
+		android:layout_marginBottom="16dp"
+		android:gravity="center"
+		android:shadowColor="#000000"
+		android:shadowDx="0"
+		android:shadowDy="4"
+		android:shadowRadius="4"
+		android:text="@string/_criar_conta_string"
+		android:textColor="@color/_bg__home_ek2_color"
+		android:textSize="26sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="@+id/enterButton"
+		app:layout_constraintHorizontal_bias="0.524"
+		app:layout_constraintStart_toStartOf="@+id/enterButton"
+		app:layout_constraintTop_toBottomOf="@+id/enterButton" />
 
-		<RelativeLayout android:id="@+id/content_container"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content" >
+	<Button
+		android:id="@+id/enterButton"
+		android:layout_width="192dp"
+		android:layout_height="76dp"
+		android:layout_marginTop="61dp"
+		android:layout_marginEnd="171dp"
+		android:alpha="0.60000002384186"
+		android:background="@drawable/_rectangle_3_shape"
+		android:gravity="center"
+		android:text="Entrar"
+		android:textColor="@color/white"
+		android:textSize="30sp"
+		app:layout_constraintEnd_toEndOf="@+id/senhaBoxHome"
+		app:layout_constraintStart_toStartOf="@+id/senhaBoxHome"
+		app:layout_constraintTop_toBottomOf="@+id/senhaBoxHome" />
 
-			<RelativeLayout android:id="@+id/page_home_ek1"
-				android:layout_marginTop="0dp"
-				android:layout_marginStart="0dp"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				>
+	<com.google.android.material.textfield.TextInputEditText
+		android:id="@+id/senhaBoxHome"
+		android:layout_width="363dp"
+		android:layout_height="87dp"
+		android:layout_marginTop="60dp"
+		android:alpha="0.60000002384186"
+		android:background="@drawable/rectangle_2_shape"
+		android:gravity="center"
+		android:hint="********"
+		android:textColor="@color/white"
+		android:textColorHint="@color/white"
+		android:textSize="25sp"
+		app:layout_constraintEnd_toEndOf="@+id/userEmailBoxHome"
+		app:layout_constraintStart_toStartOf="@+id/userEmailBoxHome"
+		app:layout_constraintTop_toBottomOf="@+id/userEmailBoxHome" />
 
-				<View
-					android:id="@+id/_bg__home_ek2"
-					android:layout_width="fill_parent"
-					android:layout_height="fill_parent"
-					android:layout_marginStart="0dp"
-					android:layout_marginTop="0dp"
-					android:background="@drawable/_bg__home_ek2_shape" />
+	<TextView
+		android:id="@+id/senhaHome"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal|center"
+		android:layout_marginTop="464dp"
+		android:layout_marginEnd="285dp"
+		android:layout_marginBottom="15dp"
+		android:gravity="center"
+		android:shadowColor="#000000"
+		android:shadowDx="0"
+		android:shadowDy="4"
+		android:shadowRadius="4"
+		android:text="@string/senha__string"
+		android:textColor="@color/_bg__home_ek2_color"
+		android:textSize="26sp"
+		app:layout_constraintBottom_toTopOf="@+id/senhaBoxHome"
+		app:layout_constraintEnd_toEndOf="@+id/senhaBoxHome"
+		app:layout_constraintStart_toStartOf="@+id/senhaBoxHome"
+		app:layout_constraintTop_toTopOf="parent" />
 
-				<ImageView
-					android:id="@+id/cor_de_fundo"
-					android:layout_width="fill_parent"
-					android:layout_height="fill_parent"
-					android:layout_marginStart="0dp"
-					android:layout_marginTop="0dp"
-					android:contentDescription="cor_de_fundo"
-					android:src="@drawable/cor_de_fundo" />
+	<com.google.android.material.textfield.TextInputEditText
+		android:id="@+id/userEmailBoxHome"
+		android:layout_width="363dp"
+		android:layout_height="87dp"
+		android:layout_marginTop="123dp"
+		android:alpha="0.60000002384186"
+		android:background="@drawable/rectangle_1_shape"
+		android:gravity="center"
+		android:hint="email@gmail.com"
+		android:textColor="@color/white"
+		android:textColorHint="@color/white"
+		android:textSize="20sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/user_icon_" />
 
-				<TextView
-					android:id="@+id/userEmailHome"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:layout_gravity="center_horizontal|center"
-					android:layout_marginStart="20dp"
-					android:layout_marginTop="317dp"
-					android:gravity="center"
-					android:shadowColor="#000000"
-					android:shadowDx="0"
-					android:shadowDy="4"
-					android:shadowRadius="4"
-					android:text="@string/e_mail__string"
-					android:textColor="@color/_bg__home_ek2_color"
-					android:textSize="26sp" />
+	<TextView
+		android:id="@+id/userEmailHome"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal|center"
+		android:layout_marginTop="317dp"
+		android:layout_marginEnd="285dp"
+		android:layout_marginBottom="15dp"
+		android:gravity="center"
+		android:shadowColor="#000000"
+		android:shadowDx="0"
+		android:shadowDy="4"
+		android:shadowRadius="4"
+		android:text="@string/e_mail__string"
+		android:textColor="@color/_bg__home_ek2_color"
+		android:textSize="26sp"
+		app:layout_constraintBottom_toTopOf="@+id/userEmailBoxHome"
+		app:layout_constraintEnd_toEndOf="@+id/userEmailBoxHome"
+		app:layout_constraintStart_toStartOf="@+id/userEmailBoxHome"
+		app:layout_constraintTop_toTopOf="parent" />
 
-				<ImageView
-					android:id="@+id/user_icon_2"
-					android:layout_width="161dp"
-					android:layout_height="160dp"
-					android:layout_marginStart="115dp"
-					android:layout_marginTop="80dp"
-					android:contentDescription="user_icon_2"
-					android:src="@drawable/user_icon_2" />
+	<ImageView
+		android:id="@+id/user_icon_"
+		android:layout_width="160dp"
+		android:layout_height="164dp"
+		android:layout_marginTop="80dp"
+		android:contentDescription="user_icon_"
+		android:src="@drawable/user_icon_2"
+		app:layout_constraintBottom_toTopOf="@+id/userEmailBoxHome"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
 
-				<com.google.android.material.textfield.TextInputEditText
-					android:id="@+id/userEmailBoxHome"
-					android:layout_width="363dp"
-					android:layout_height="87dp"
-					android:layout_marginStart="14dp"
-					android:layout_marginTop="368dp"
-					android:alpha="0.60000002384186"
-					android:background="@drawable/rectangle_1_shape"
-					android:gravity="center"
-					android:hint="email@gmail.com"
-					android:textColor="@color/white"
-					android:textColorHint="@color/white"
-					android:textSize="20sp" />
-
-				<Button
-					android:id="@+id/enterButton"
-					android:layout_width="192dp"
-					android:layout_height="76dp"
-					android:layout_marginStart="14dp"
-					android:layout_marginTop="662dp"
-					android:alpha="0.60000002384186"
-					android:background="@drawable/_rectangle_3_shape"
-					android:gravity="center"
-					android:text="Entrar"
-					android:textColor="@color/white"
-					android:textSize="30sp" />
-
-				<com.google.android.material.textfield.TextInputEditText
-					android:id="@+id/senhaBoxHome"
-					android:layout_width="363dp"
-					android:layout_height="87dp"
-					android:layout_marginStart="14dp"
-					android:layout_marginTop="515dp"
-					android:alpha="0.60000002384186"
-					android:background="@drawable/rectangle_2_shape"
-					android:gravity="center"
-					android:hint="********"
-					android:textColor="@color/white"
-					android:textColorHint="@color/white"
-					android:textSize="25sp" />
-
-				<TextView
-					android:id="@+id/senhaHome"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:layout_gravity="center_horizontal|center"
-					android:layout_marginStart="20dp"
-					android:layout_marginTop="464dp"
-					android:gravity="center"
-					android:shadowColor="#000000"
-					android:shadowDx="0"
-					android:shadowDy="4"
-					android:shadowRadius="4"
-					android:text="@string/senha__string"
-					android:textColor="@color/_bg__home_ek2_color"
-					android:textSize="26sp" />
-
-				<TextView
-					android:id="@+id/registerButtonHome"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:layout_gravity="center_horizontal|center"
-					android:layout_marginStart="40dp"
-					android:layout_marginTop="768dp"
-					android:gravity="center"
-					android:shadowColor="#000000"
-					android:shadowDx="0"
-					android:shadowDy="4"
-					android:shadowRadius="4"
-					android:text="@string/_criar_conta_string"
-					android:textColor="@color/_bg__home_ek2_color"
-					android:textSize="26sp" />
-
-			</RelativeLayout>
-
-		</RelativeLayout>
-
-	</ScrollView>
-</HorizontalScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
