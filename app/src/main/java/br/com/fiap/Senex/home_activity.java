@@ -14,10 +14,8 @@ import com.google.android.material.textfield.TextInputEditText;
 public class home_activity extends AppCompatActivity {
 
 	
-	private View _bg__home_ek2;
 	private ImageView cor_de_fundo;
 	private TextView userEmailHome;
-	private ImageView user_icon_2;
 	private TextInputEditText userEmailBoxHome;
 	private TextInputEditText senhaBoxHome;
 	private TextView senhaHome;
@@ -31,10 +29,8 @@ public class home_activity extends AppCompatActivity {
 		setContentView(R.layout.home);
 
 		
-		_bg__home_ek2 = (View) findViewById(R.id._bg__home_ek2);
 		cor_de_fundo = (ImageView) findViewById(R.id.cor_de_fundo);
 		userEmailHome = (TextView) findViewById(R.id.userEmailHome);
-		user_icon_2 = (ImageView) findViewById(R.id.user_icon_2);
 		userEmailBoxHome = (TextInputEditText) findViewById(R.id.userEmailBoxHome);
 		senhaBoxHome = (TextInputEditText) findViewById(R.id.senhaBoxHome);
 		senhaHome = (TextView) findViewById(R.id.senhaHome);
