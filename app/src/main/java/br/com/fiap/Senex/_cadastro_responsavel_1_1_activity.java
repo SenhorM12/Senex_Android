@@ -46,9 +46,7 @@ public class _cadastro_responsavel_1_1_activity extends AppCompatActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout._cadastro_responsavel_1_1);
 
-		
-		_bg____cadastro_responsavel_1_1_ek2 = (View) findViewById(R.id._bg____cadastro_responsavel_1_1_ek2);
-		cor_de_fundo_ek1 = (ImageView) findViewById(R.id.cor_de_fundo_ek1);
+
 		username = (TextView) findViewById(R.id.username);
 		telefone = (TextView) findViewById(R.id.telefone);
 		userEmail = (TextView) findViewById(R.id.userEmail);

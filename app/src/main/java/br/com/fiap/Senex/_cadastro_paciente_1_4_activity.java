@@ -51,7 +51,6 @@ public class _cadastro_paciente_1_4_activity extends AppCompatActivity {
 		setContentView(R.layout._cadastro_paciente_1_4);
 
 
-		_bg____cadastro_paciente_1_4 = (View) findViewById(R.id._bg____cadastro_paciente_1_4);
 		cor_de_fundo = (ImageView) findViewById(R.id.cor_de_fundo);
 		nome1_4 = (TextView) findViewById(R.id.nome1_4);
 		cpf1_4 = (TextView) findViewById(R.id.cpf1_4);
