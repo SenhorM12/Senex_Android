@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
-	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:background="@drawable/cor_de_fundo"
@@ -37,7 +36,7 @@
 		android:alpha="0.60000002384186"
 		android:background="@drawable/_rectangle_3_shape"
 		android:gravity="center"
-		android:text="Entrar"
+		android:text="@string/entrar"
 		android:textColor="@color/white"
 		android:textSize="30sp"
 		app:layout_constraintEnd_toEndOf="@+id/senhaBoxHome"
@@ -78,8 +77,10 @@
 		android:textSize="26sp"
 		app:layout_constraintBottom_toTopOf="@+id/senhaBoxHome"
 		app:layout_constraintEnd_toEndOf="@+id/senhaBoxHome"
+		app:layout_constraintHorizontal_bias="1.0"
 		app:layout_constraintStart_toStartOf="@+id/senhaBoxHome"
-		app:layout_constraintTop_toTopOf="parent" />
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.0" />
 
 	<com.google.android.material.textfield.TextInputEditText
 		android:id="@+id/userEmailBoxHome"
@@ -123,7 +124,7 @@
 		android:layout_width="160dp"
 		android:layout_height="164dp"
 		android:layout_marginTop="80dp"
-		android:contentDescription="user_icon_"
+		android:contentDescription="@string/user_icon"
 		android:src="@drawable/user_icon_2"
 		app:layout_constraintBottom_toTopOf="@+id/userEmailBoxHome"
 		app:layout_constraintEnd_toEndOf="parent"

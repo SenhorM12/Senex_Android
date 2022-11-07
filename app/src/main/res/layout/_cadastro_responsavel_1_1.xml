@@ -1,217 +1,212 @@
-<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
 	android:layout_width="match_parent"
-	android:layout_height="wrap_content">
+	android:layout_height="match_parent"
+	android:background="@drawable/cor_de_fundo">
 
-	<ScrollView android:id="@+id/_cadastro_responsavel_1_1" 
-		android:layout_width="wrap_content" 
-		android:layout_height="match_parent" >
+	<TextView
+		android:id="@+id/telefone"
+		android:layout_width="323dp"
+		android:layout_height="35dp"
+		android:gravity="center"
+		android:shadowColor="#000000"
+		android:shadowDx="0"
+		android:shadowDy="4"
+		android:shadowRadius="4"
+		android:text="@string/telefone_somente_n_mero"
+		android:textColor="@color/_bg__home_ek2_color"
+		android:textSize="26sp"
+		app:layout_constraintBottom_toTopOf="@+id/telefoneBox"
+		app:layout_constraintStart_toStartOf="@+id/telefoneBox" />
 
-		<RelativeLayout android:id="@+id/content_container" 
-			android:layout_width="wrap_content" 
-			android:layout_height="wrap_content" >
+	<TextView
+		android:id="@+id/senha1_1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:shadowColor="#000000"
+		android:shadowDx="0"
+		android:shadowDy="4"
+		android:shadowRadius="4"
+		android:text="@string/senha"
+		android:textColor="@color/_bg__home_ek2_color"
+		android:textSize="26sp"
+		app:layout_constraintBottom_toTopOf="@+id/senhaBox1_1"
+		app:layout_constraintStart_toStartOf="@+id/senhaBox1_1" />
 
-			<RelativeLayout android:id="@+id/page___cadastro_responsavel_1_1_ek1"
-				android:layout_marginTop="0dp"
-				android:layout_marginStart="0dp"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				>
+	<TextView
+		android:id="@+id/userEmail"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:shadowColor="#000000"
+		android:shadowDx="0"
+		android:shadowDy="4"
+		android:shadowRadius="4"
+		android:text="@string/email"
+		android:textColor="@color/_bg__home_ek2_color"
+		android:textSize="26sp"
+		app:layout_constraintBottom_toTopOf="@+id/userEmailBox"
+		app:layout_constraintStart_toStartOf="@+id/userEmailBox" />
 
-				<View   android:id="@+id/_bg____cadastro_responsavel_1_1_ek2"
-					android:background="@drawable/_bg____cadastro_responsavel_1_1_ek2_shape"
-					 android:layout_marginStart="0dp"
-					android:layout_marginTop="0dp"
-					android:layout_width="390dp"
-					android:layout_height="844dp" />
+	<TextView
+		android:id="@+id/cpf"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:shadowColor="#000000"
+		android:shadowDx="0"
+		android:shadowDy="4"
+		android:shadowRadius="4"
+		android:text="@string/cpf_opcional2"
+		android:textColor="@color/_bg__home_ek2_color"
+		android:textSize="26sp"
+		app:layout_constraintBottom_toTopOf="@+id/cpfBox"
+		app:layout_constraintStart_toStartOf="@+id/cpfBox" />
 
-				<ImageView android:id="@+id/cor_de_fundo_ek1"
-					android:src="@drawable/cor_de_fundo_ek1"
-					android:contentDescription="cor_de_fundo_ek1"
-					 android:layout_marginStart="0dp"
-					android:layout_marginTop="0dp"
-					android:layout_width="390dp"
-					android:layout_height="844dp" />
+	<TextView
+		android:id="@+id/username"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:shadowColor="#000000"
+		android:shadowDx="0"
+		android:shadowDy="4"
+		android:shadowRadius="4"
+		android:text="@string/nome_respons_vel"
+		android:textColor="@color/_bg__home_ek2_color"
+		android:textSize="26sp"
+		app:layout_constraintBottom_toTopOf="@+id/usernameBox"
+		app:layout_constraintStart_toStartOf="@+id/usernameBox" />
 
-				<TextView
-					android:id="@+id/username"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:layout_marginStart="8dp"
-					android:layout_marginTop="240dp"
-					android:gravity="center"
-					android:shadowColor="#000000"
-					android:shadowDx="0"
-					android:shadowDy="4"
-					android:shadowRadius="4"
-					android:text="Nome responsável:"
-					android:textColor="@color/_bg__home_ek2_color"
-					android:textSize="26sp" />
+	<Button
+		android:id="@+id/registerButton"
+		android:layout_width="152dp"
+		android:layout_height="47dp"
+		android:layout_marginStart="225dp"
+		android:layout_marginTop="767dp"
+		android:layout_marginEnd="34dp"
+		android:alpha="0.60000002384186"
+		android:background="@drawable/rectangle_1_shape"
+		android:gravity="center"
+		android:shadowColor="#000000"
+		android:shadowDx="0"
+		android:shadowDy="4"
+		android:shadowRadius="4"
+		android:text="@string/criar"
+		android:textColor="@color/_bg__home_ek2_color"
+		android:textSize="26sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
 
-				<TextView
-					android:id="@+id/telefone"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:layout_marginStart="8dp"
-					android:layout_marginTop="430dp"
-					android:gravity="center"
-					android:shadowColor="#000000"
-					android:shadowDx="0"
-					android:shadowDy="4"
-					android:shadowRadius="4"
-					android:text="Telefone(Somente número):"
-					android:textColor="@color/_bg__home_ek2_color"
-					android:textSize="26sp" />
+	<com.google.android.material.textfield.TextInputEditText
+		android:id="@+id/senhaBox1_1"
+		android:layout_width="367dp"
+		android:layout_height="47dp"
+		android:layout_marginStart="12dp"
+		android:layout_marginTop="53dp"
+		android:layout_marginEnd="32dp"
+		android:alpha="0.60000002384186"
+		android:background="@drawable/rectangle_1_shape"
+		android:gravity="center"
+		android:hint="@string/digite_sua_senha"
+		android:inputType="textPassword"
+		android:textColor="@color/white"
+		android:textColorHint="@color/white"
+		android:textSize="25sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/userEmailBox" />
 
-				<TextView
-					android:id="@+id/userEmail"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:layout_marginStart="8dp"
-					android:layout_marginTop="520dp"
-					android:gravity="center"
-					android:shadowColor="#000000"
-					android:shadowDx="0"
-					android:shadowDy="4"
-					android:shadowRadius="4"
-					android:text="Email:"
-					android:textColor="@color/_bg__home_ek2_color"
-					android:textSize="26sp" />
+	<com.google.android.material.textfield.TextInputEditText
+		android:id="@+id/userEmailBox"
+		android:layout_width="367dp"
+		android:layout_height="47dp"
+		android:layout_marginStart="12dp"
+		android:layout_marginTop="45dp"
+		android:layout_marginEnd="32dp"
+		android:alpha="0.60000002384186"
+		android:background="@drawable/rectangle_1_shape"
+		android:gravity="center"
+		android:hint="@string/email_gmail_com"
+		android:inputType="textWebEmailAddress"
+		android:textColor="@color/white"
+		android:textColorHint="@color/white"
+		android:textSize="25sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/telefoneBox" />
 
-				<TextView
-					android:id="@+id/senha1_1"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:layout_marginStart="8dp"
-					android:layout_marginTop="620dp"
-					android:gravity="center"
-					android:shadowColor="#000000"
-					android:shadowDx="0"
-					android:shadowDy="4"
-					android:shadowRadius="4"
-					android:text="Senha"
-					android:textColor="@color/_bg__home_ek2_color"
-					android:textSize="26sp" />
+	<com.google.android.material.textfield.TextInputEditText
+		android:id="@+id/telefoneBox"
+		android:layout_width="367dp"
+		android:layout_height="47dp"
+		android:layout_marginStart="12dp"
+		android:layout_marginTop="47dp"
+		android:layout_marginEnd="32dp"
+		android:alpha="0.60000002384186"
+		android:background="@drawable/rectangle_1_shape"
+		android:gravity="center"
+		android:hint="(00) 0000 - 0000"
+		android:inputType="phone"
+		android:textColor="@color/white"
+		android:textColorHint="@color/white"
+		android:textSize="25sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/cpfBox" />
 
-				<TextView
-					android:id="@+id/cpf"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:layout_marginStart="8dp"
-					android:layout_marginTop="330dp"
-					android:gravity="center"
-					android:shadowColor="#000000"
-					android:shadowDx="0"
-					android:shadowDy="4"
-					android:shadowRadius="4"
-					android:text="CPF(Opcional):"
-					android:textColor="@color/_bg__home_ek2_color"
-					android:textSize="26sp" />
+	<com.google.android.material.textfield.TextInputEditText
+		android:id="@+id/cpfBox"
+		android:layout_width="367dp"
+		android:layout_height="47dp"
+		android:layout_marginStart="12dp"
+		android:layout_marginTop="53dp"
+		android:layout_marginEnd="32dp"
+		android:alpha="0.60000002384186"
+		android:background="@drawable/rectangle_1_shape"
+		android:gravity="center"
+		android:hint="123.456.789.01"
+		android:textColor="@color/white"
+		android:textColorHint="@color/white"
+		android:textSize="25sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/usernameBox" />
 
-				<ImageView android:id="@+id/homem_perfil_caricatura_18591_58482_1"
-					android:src="@drawable/homem_perfil_caricatura_18591_58482_1"
-					android:contentDescription="homem_perfil_caricatura_18591_58482_1"
-					 android:layout_marginStart="139dp"
-					android:layout_marginTop="92dp"
-					android:layout_width="121dp"
-					android:layout_height="118dp" />
+	<com.google.android.material.textfield.TextInputEditText
+		android:id="@+id/usernameBox"
+		android:layout_width="367dp"
+		android:layout_height="47dp"
+		android:layout_marginStart="12dp"
+		android:layout_marginTop="64dp"
+		android:layout_marginEnd="32dp"
+		android:alpha="0.60000002384186"
+		android:background="@drawable/rectangle_1_shape"
+		android:gravity="center"
+		android:hint="@string/digite_seu_nome_de_usu_rio"
+		android:inputType="text"
+		android:textColor="@color/white"
+		android:textColorHint="@color/white"
+		android:textSize="25sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/homem_perfil_caricatura_18591_58482_1" />
 
-				<com.google.android.material.textfield.TextInputEditText
-					android:id="@+id/usernameBox"
-					android:layout_width="367dp"
-					android:layout_height="47dp"
-					android:layout_marginStart="12dp"
-					android:layout_marginTop="274dp"
-					android:alpha="0.60000002384186"
-					android:background="@drawable/rectangle_1_shape"
-					android:gravity="center"
-					android:hint="Digite seu nome de usuário..."
-					android:inputType="text"
-					android:textColor="@color/white"
-					android:textColorHint="@color/white"
-					android:textSize="25sp" />
-
-				<com.google.android.material.textfield.TextInputEditText
-					android:id="@+id/telefoneBox"
-					android:layout_width="367dp"
-					android:layout_height="47dp"
-					android:layout_marginStart="12dp"
-					android:layout_marginTop="468dp"
-					android:alpha="0.60000002384186"
-					android:background="@drawable/rectangle_1_shape"
-					android:gravity="center"
-					android:hint="(00) 0000 - 0000"
-					android:inputType="phone"
-					android:textColor="@color/white"
-					android:textColorHint="@color/white"
-					android:textSize="25sp" />
-
-				<com.google.android.material.textfield.TextInputEditText
-					android:id="@+id/userEmailBox"
-					android:layout_width="367dp"
-					android:layout_height="47dp"
-					android:layout_marginStart="12dp"
-					android:layout_marginTop="560dp"
-					android:alpha="0.60000002384186"
-					android:background="@drawable/rectangle_1_shape"
-					android:gravity="center"
-					android:hint="email@gmail.com"
-					android:inputType="textWebEmailAddress"
-					android:textColor="@color/white"
-					android:textColorHint="@color/white"
-					android:textSize="25sp" />
-
-				<com.google.android.material.textfield.TextInputEditText
-					android:id="@+id/senhaBox1_1"
-					android:layout_width="367dp"
-					android:layout_height="47dp"
-					android:layout_marginStart="12dp"
-					android:layout_marginTop="660dp"
-					android:alpha="0.60000002384186"
-					android:background="@drawable/rectangle_1_shape"
-					android:gravity="center"
-					android:hint="Digite sua senha..."
-					android:inputType="textPassword"
-					android:textColor="@color/white"
-					android:textColorHint="@color/white"
-					android:textSize="25sp" />
-
-				<com.google.android.material.textfield.TextInputEditText
-					android:id="@+id/cpfBox"
-					android:layout_width="367dp"
-					android:layout_height="47dp"
-					android:layout_marginStart="12dp"
-					android:layout_marginTop="374dp"
-					android:alpha="0.60000002384186"
-					android:background="@drawable/rectangle_1_shape"
-					android:gravity="center"
-					android:hint="123.456.789.01"
-					android:textColor="@color/white"
-					android:textColorHint="@color/white"
-					android:textSize="25sp" />
-
-				<Button
-					android:id="@+id/registerButton"
-					android:layout_width="152dp"
-					android:layout_height="47dp"
-					android:layout_marginStart="225dp"
-					android:layout_marginTop="767dp"
-					android:alpha="0.60000002384186"
-					android:background="@drawable/rectangle_1_shape"
-					android:gravity="center"
-					android:shadowColor="#000000"
-					android:shadowDx="0"
-					android:shadowDy="4"
-					android:shadowRadius="4"
-					android:text="Criar"
-					android:textColor="@color/_bg__home_ek2_color"
-					android:textSize="26sp" />
-
-			</RelativeLayout>
-
-
-
-
-		</RelativeLayout>
-
-	</ScrollView>
-</HorizontalScrollView>
+	<ImageView
+		android:id="@+id/homem_perfil_caricatura_18591_58482_1"
+		android:layout_width="121dp"
+		android:layout_height="118dp"
+		android:layout_marginStart="139dp"
+		android:layout_marginTop="92dp"
+		android:layout_marginEnd="151dp"
+		android:layout_marginBottom="30dp"
+		android:contentDescription="homem_perfil_caricatura_18591_58482_1"
+		android:src="@drawable/homem_perfil_caricatura_18591_58482_1"
+		app:layout_constraintBottom_toTopOf="@+id/username"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
