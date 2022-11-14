@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,42 +17,21 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.Charset;
-import java.util.StringTokenizer;
+import java.util.List;
 
+import br.com.fiap.senex.adapter.ListPacotesAdapter;
+import br.com.fiap.senex.dao.PacoteDAO;
+import br.com.fiap.senex.model.Pacote;
 import kotlin.io.ByteStreamsKt;
 import kotlin.jvm.internal.Intrinsics;
 
 public class tela_responsavel_activity extends AppCompatActivity {
 
 
-	private View _bg__tela_responsavel;
-	private ImageView cor_de_fundo;
 	private TextView nome_resp;
 	private TextView cpf_resp;
 	private ImageView homem_perfil_caricatura_18591_58482_1;
-	private TextView number_resp;
-	private ImageView rectangle_9;
-	private ImageView office_customer_female_light_icon_4;
-	private TextView nome_resp_add;
-	private View rectangle_10_ek1;
-	private TextView rusovas___ems;
-	private TextView comprimido_resp;
-	private TextView horario_med;
-	private ImageView accept_icon_1;
-	private TextView motivo_med;
-	private ImageView pencil_icon_1;
-	private ImageView bin_2_icon_1;
-	private ImageView rectangle_11;
-	private ImageView office_customer_female_light_icon_5;
-	private TextView nome_resp_2;
-	private View rectangle_10_ek2;
-	private TextView rusovas___ems_ek1;
-	private TextView comprimido_resp_2;
-	private TextView horario_med_2;
-	private TextView motivo_med_2;
-	private ImageView pencil_icon_1_ek1;
-	private ImageView bin_2_icon_1_ek1;
-	private ImageView _accept_icon_1_ek1;
+	private ListView list_pacotes_listview;
 	private Button sair_resp;
 	private Button add_prt;
 
@@ -62,50 +42,16 @@ public class tela_responsavel_activity extends AppCompatActivity {
 		setContentView(R.layout.tela_responsavel);
 
 
-		_bg__tela_responsavel = (View) findViewById(R.id._bg__tela_responsavel);
-		cor_de_fundo = (ImageView) findViewById(R.id.cor_de_fundo);
 		nome_resp = (TextView) findViewById(R.id.nome_resp);
 		cpf_resp = (TextView) findViewById(R.id.cpf_resp);
 		homem_perfil_caricatura_18591_58482_1 = (ImageView) findViewById(R.id.homem_perfil_caricatura_18591_58482_1);
-		number_resp = (TextView) findViewById(R.id.number_resp);
-		rectangle_9 = (ImageView) findViewById(R.id.rectangle_9);
-		office_customer_female_light_icon_4 = (ImageView) findViewById(R.id.office_customer_female_light_icon_4);
-		nome_resp_add = (TextView) findViewById(R.id.nome_resp_add);
-		rectangle_10_ek1 = (View) findViewById(R.id.rectangle_10_ek1);
-		rusovas___ems = (TextView) findViewById(R.id.rusovas___ems);
-		comprimido_resp = (TextView) findViewById(R.id.comprimido_resp);
-		horario_med = (TextView) findViewById(R.id.horario_med);
-		accept_icon_1 = (ImageView) findViewById(R.id.accept_icon_1);
-		motivo_med = (TextView) findViewById(R.id.motivo_med);
-		pencil_icon_1 = (ImageView) findViewById(R.id.pencil_icon_1);
-		bin_2_icon_1 = (ImageView) findViewById(R.id.bin_2_icon_1);
 		sair_resp = (Button) findViewById(R.id.sair_resp);
 		add_prt = (Button) findViewById(R.id.add_prt);
+		list_pacotes_listview = (ListView) findViewById(R.id.list_pacotes_listview);
 
-		String data = this.retrieveUser("user");
-		StringTokenizer tokenizer = new StringTokenizer(data, ":");
-		String nome = tokenizer.hasMoreTokens() ? tokenizer.nextToken() : "Responsável";
-		String cpf = tokenizer.hasMoreTokens() ? tokenizer.nextToken() : "";
-		String number = tokenizer.hasMoreTokens() ? tokenizer.nextToken() : "";
-		nome_resp.setText((CharSequence)nome);
-		cpf_resp.setText((CharSequence)cpf);
-		number_resp.setText((CharSequence)number);
+		List<Pacote> pacotes = new PacoteDAO().lista();
 
-		String data1 = this.retrieveUser1("protegido");
-		StringTokenizer tokenizer1 = new StringTokenizer(data1, ":");
-		String nome1 = tokenizer1.hasMoreTokens() ? tokenizer1.nextToken() : "";
-		nome_resp_add.setText((CharSequence)nome1);
-
-		String data2 = this.retrieveUser2("paciente");
-		StringTokenizer tokenizer2 = new StringTokenizer(data2, ":");
-		String horario = tokenizer2.hasMoreTokens() ? tokenizer2.nextToken() : "";
-		String remedio = tokenizer2.hasMoreTokens() ? tokenizer2.nextToken() : "";
-		String quantidade = tokenizer2.hasMoreTokens() ? tokenizer2.nextToken() : "";
-		String receita = tokenizer2.hasMoreTokens() ? tokenizer2.nextToken() : "";
-		horario_med.setText((CharSequence)horario + "Hr");
-		rusovas___ems.setText((CharSequence)remedio);
-		comprimido_resp.setText((CharSequence)quantidade);
-		motivo_med.setText((CharSequence)receita);
+		list_pacotes_listview.setAdapter(new ListPacotesAdapter(pacotes, this));
 
 
 		sair_resp.setOnClickListener(new View.OnClickListener() {

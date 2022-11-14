@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,7 +13,6 @@ import com.google.android.material.textfield.TextInputEditText;
 public class home_activity extends AppCompatActivity {
 
 	
-	private ImageView cor_de_fundo;
 	private TextView userEmailHome;
 	private TextInputEditText userEmailBoxHome;
 	private TextInputEditText senhaBoxHome;
@@ -29,7 +27,6 @@ public class home_activity extends AppCompatActivity {
 		setContentView(R.layout.home);
 
 		
-		cor_de_fundo = (ImageView) findViewById(R.id.cor_de_fundo);
 		userEmailHome = (TextView) findViewById(R.id.userEmailHome);
 		userEmailBoxHome = (TextInputEditText) findViewById(R.id.userEmailBoxHome);
 		senhaBoxHome = (TextInputEditText) findViewById(R.id.senhaBoxHome);

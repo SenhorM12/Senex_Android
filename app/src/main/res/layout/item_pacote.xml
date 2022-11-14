@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="362dp"
+        android:layout_height="250dp"
+        app:cardBackgroundColor="#99E82020"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="362dp"
+            android:layout_height="250dp"
+            tools:layout_editor_absoluteX="54dp">
+
+            <View
+                android:id="@+id/rectangle_10_ek"
+                android:layout_width="0dp"
+                android:layout_height="199dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/rectangle_10_ek2_shape"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/office_customer_female_light_icon_"
+                android:layout_width="43dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="21dp"
+                android:contentDescription="office_customer_female_light_icon_4"
+                android:src="@drawable/office_customer_female_light_icon_4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/nome_resp_add2"
+                android:layout_width="162dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="41dp"
+                android:text="Vó Maria"
+                android:textColor="@color/v__maria_color"
+                android:textSize="40sp"
+                app:layout_constraintStart_toEndOf="@+id/office_customer_female_light_icon_"
+                app:layout_constraintTop_toTopOf="@+id/office_customer_female_light_icon_" />
+
+            <TextView
+                android:id="@+id/horario_med2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="22dp"
+                android:text="@string/_10_15_string"
+                android:textColor="@color/v__maria_color"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/rectangle_10_ek" />
+
+            <TextView
+                android:id="@+id/comprimido_resp2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/_1_comprimido___10mg___branco_string"
+                android:textColor="@color/v__maria_color"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.694" />
+
+            <TextView
+                android:id="@+id/motivo_med3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:text="@string/__colesterol_string"
+                android:textColor="@color/v__maria_color"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/comprimido_resp2"
+                app:layout_constraintTop_toBottomOf="@+id/comprimido_resp2" />
+
+            <TextView
+                android:id="@+id/rusovas___ems3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rusovas___ems_string"
+                android:textColor="@color/v__maria_color"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/horario_med2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/accept_icon_"
+                android:layout_width="46dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="134dp"
+                android:layout_marginEnd="26dp"
+                android:background="@drawable/accept_icon_1"
+                app:layout_constraintEnd_toEndOf="@+id/rectangle_10_ek"
+                app:layout_constraintTop_toTopOf="@+id/rectangle_10_ek" />
+
+            <Button
+                android:id="@+id/bin_2_icon_"
+                android:layout_width="28dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="21dp"
+                android:background="@drawable/bin_2_icon_1"
+                app:layout_constraintStart_toEndOf="@+id/pencil_icon_"
+                app:layout_constraintTop_toTopOf="@+id/pencil_icon_" />
+
+            <Button
+                android:id="@+id/pencil_icon_"
+                android:layout_width="28dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="274dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/pencil_icon_1"
+                app:layout_constraintStart_toStartOf="@+id/rectangle_10_ek"
+                app:layout_constraintTop_toTopOf="@+id/rectangle_10_ek" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

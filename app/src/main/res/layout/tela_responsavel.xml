@@ -1,241 +1,108 @@
-<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
-	android:layout_height="wrap_content">
+	android:layout_height="match_parent"
+	android:background="@drawable/cor_de_fundo">
 
-	<ScrollView android:id="@+id/tela_responsavel"
+	<TextView
+		android:id="@+id/cpf_resp"
 		android:layout_width="wrap_content"
-		android:layout_height="match_parent" >
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal|center"
+		android:layout_marginStart="10dp"
+		android:layout_marginTop="10dp"
+		android:gravity="center"
+		android:shadowColor="#000000"
+		android:shadowDx="0"
+		android:shadowDy="4"
+		android:shadowRadius="4"
+		android:text="@string/cpf__string"
+		android:textColor="@color/white"
+		android:textSize="19sp"
+		app:layout_constraintStart_toEndOf="@+id/homem_perfil_caricatura_18591_58482_1"
+		app:layout_constraintTop_toBottomOf="@+id/nome_resp" />
 
-		<RelativeLayout android:id="@+id/content_container"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content" >
+	<TextView
+		android:id="@+id/nome_resp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal|center"
+		android:layout_marginStart="12dp"
+		android:layout_marginTop="15dp"
+		android:gravity="center"
+		android:shadowColor="#000000"
+		android:shadowDx="0"
+		android:shadowDy="4"
+		android:shadowRadius="4"
+		android:text="@string/nome__string"
+		android:textColor="@color/white"
+		android:textSize="19sp"
+		app:layout_constraintStart_toEndOf="@+id/homem_perfil_caricatura_18591_58482_1"
+		app:layout_constraintTop_toTopOf="@+id/homem_perfil_caricatura_18591_58482_1" />
 
-			<View
-				android:id="@+id/_bg__tela_responsavel"
-				android:layout_width="390dp"
-				android:layout_height="844dp"
-				android:layout_marginStart="0dp"
-				android:layout_marginTop="0dp"
-				android:background="@drawable/cor_de_fundo" />
+	<ImageView
+		android:id="@+id/homem_perfil_caricatura_18591_58482_1"
+		android:layout_width="121dp"
+		android:layout_height="118dp"
+		android:layout_marginStart="13dp"
+		android:layout_marginTop="77dp"
+		android:contentDescription="homem_perfil_caricatura_18591_58482_1"
+		android:src="@drawable/homem_perfil_caricatura_18591_58482_1"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
 
-			<ImageView
-				android:id="@+id/cor_de_fundo"
-				android:layout_width="390dp"
-				android:layout_height="844dp"
-				android:layout_marginStart="0dp"
-				android:layout_marginTop="0dp"
-				android:contentDescription="cor_de_fundo"
-				android:src="@drawable/cor_de_fundo" />
+	<Button
+		android:id="@+id/add_prt"
+		android:layout_width="174dp"
+		android:layout_height="48dp"
+		android:layout_gravity="center_horizontal|center"
+		android:layout_marginStart="28dp"
+		android:layout_marginTop="766dp"
+		android:alpha="0.60000002384186"
+		android:background="@drawable/_rectangle_3_shape"
+		android:gravity="center"
+		android:shadowColor="#000000"
+		android:shadowDx="0"
+		android:shadowDy="4"
+		android:shadowRadius="4"
+		android:text="Adicionar"
+		android:textColor="@color/white"
+		android:textSize="26sp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
 
-			<TextView
-				android:id="@+id/nome_resp"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_gravity="center_horizontal|center"
-				android:layout_marginStart="12dp"
-				android:layout_marginTop="77dp"
-				android:layout_toEndOf="@+id/homem_perfil_caricatura_18591_58482_1"
-				android:gravity="center"
-				android:shadowColor="#000000"
-				android:shadowDx="0"
-				android:shadowDy="4"
-				android:shadowRadius="4"
-				android:text="@string/nome__string"
-				android:textColor="@color/white"
-				android:textSize="19sp" />
+	<Button
+		android:id="@+id/sair_resp"
+		android:layout_width="174dp"
+		android:layout_height="48dp"
+		android:layout_gravity="center_horizontal|center"
+		android:layout_marginStart="220dp"
+		android:layout_marginTop="766dp"
+		android:alpha="0.60000002384186"
+		android:background="@drawable/_rectangle_3_shape"
+		android:gravity="center"
+		android:shadowColor="#000000"
+		android:shadowDx="0"
+		android:shadowDy="4"
+		android:shadowRadius="4"
+		android:text="@string/_sair_string"
+		android:textColor="@color/white"
+		android:textSize="26sp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
 
-			<TextView
-				android:id="@+id/cpf_resp"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_gravity="center_horizontal|center"
-				android:layout_marginStart="12dp"
-				android:layout_marginTop="111dp"
-				android:layout_toEndOf="@+id/homem_perfil_caricatura_18591_58482_1"
-				android:gravity="center"
-				android:shadowColor="#000000"
-				android:shadowDx="0"
-				android:shadowDy="4"
-				android:shadowRadius="4"
-				android:text="@string/cpf__string"
-				android:textColor="@color/white"
-				android:textSize="19sp" />
+	f
 
-			<ImageView android:id="@+id/homem_perfil_caricatura_18591_58482_1"
-				android:src="@drawable/homem_perfil_caricatura_18591_58482_1"
-				android:contentDescription="homem_perfil_caricatura_18591_58482_1"
-				android:layout_marginStart="14dp"
-				android:layout_marginTop="75dp"
-				android:layout_width="121dp"
-				android:layout_height="118dp" />
+	<ListView
+		android:id="@+id/list_pacotes_listview"
+		android:layout_width="355dp"
+		android:layout_height="535dp"
+		android:layout_marginTop="24dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/homem_perfil_caricatura_18591_58482_1"
+		tools:listitem="@layout/item_pacote" />
 
-			<TextView
-				android:id="@+id/number_resp"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_gravity="center_horizontal|center"
-				android:layout_marginStart="12dp"
-				android:layout_marginTop="145dp"
-				android:layout_toEndOf="@+id/homem_perfil_caricatura_18591_58482_1"
-				android:gravity="center"
-				android:shadowColor="#000000"
-				android:shadowDx="0"
-				android:shadowDy="4"
-				android:shadowRadius="4"
-				android:textColor="@color/white"
-				android:textSize="19sp" />
-
-			<ImageView android:id="@+id/rectangle_9"
-				android:src="@drawable/rectangle_9"
-				android:contentDescription="rectangle_9"
-				android:layout_marginStart="13dp"
-				android:layout_marginTop="210dp"
-				android:layout_width="362dp"
-				android:layout_height="250dp" />
-
-
-			<ImageView
-				android:id="@+id/office_customer_female_light_icon_4"
-				android:layout_width="46.92dp"
-				android:layout_height="50dp"
-				android:layout_marginStart="50dp"
-				android:layout_marginTop="210dp"
-				android:contentDescription="office_customer_female_light_icon_4"
-				android:src="@drawable/office_customer_female_light_icon_4" />
-
-			<TextView
-				android:id="@+id/nome_resp_add"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_marginStart="114dp"
-				android:layout_marginTop="211dp"
-				android:text="@string/v__maria_string"
-				android:textColor="@color/v__maria_color"
-				android:textSize="40sp" />
-
-
-			<RelativeLayout
-				android:id="@+id/group_7"
-				android:layout_marginTop="263dp"
-				android:layout_marginStart="13dp"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				>
-
-				<View
-					android:id="@+id/rectangle_10_ek1"
-					android:layout_width="368dp"
-					android:layout_height="199.31dp"
-					android:layout_marginStart="0dp"
-					android:layout_marginTop="0dp"
-					android:background="@drawable/rectangle_10_ek2_shape" />
-
-				<TextView
-					android:id="@+id/rusovas___ems"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:layout_marginStart="13dp"
-					android:layout_marginTop="62dp"
-					android:text="@string/rusovas___ems_string"
-					android:textColor="@color/v__maria_color"
-					android:textSize="18sp" />
-
-				<TextView
-					android:id="@+id/comprimido_resp"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:layout_marginStart="13dp"
-					android:layout_marginTop="103dp"
-					android:text="@string/_1_comprimido___10mg___branco_string"
-					android:textColor="@color/v__maria_color"
-					android:textSize="18sp" />
-
-				<TextView
-					android:id="@+id/horario_med"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:layout_marginStart="13dp"
-					android:layout_marginTop="20dp"
-					android:text="@string/_10_15_string"
-					android:textColor="@color/v__maria_color"
-					android:textSize="18sp" />
-
-				<ImageView android:id="@+id/accept_icon_1"
-					android:src="@drawable/accept_icon_1"
-					android:contentDescription="accept_icon_1"
-					android:layout_marginStart="304dp"
-					android:layout_marginTop="132dp"
-					android:layout_width="46dp"
-					android:layout_height="48dp" />
-
-				<TextView
-					android:id="@+id/motivo_med"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:layout_marginStart="13dp"
-					android:layout_marginTop="143dp"
-					android:text="@string/__colesterol_string"
-					android:textColor="@color/v__maria_color"
-					android:textSize="18sp" />
-
-				<ImageView android:id="@+id/pencil_icon_1"
-					android:src="@drawable/pencil_icon_1"
-					android:contentDescription="pencil_icon_1"
-					android:layout_marginStart="277dp"
-					android:layout_marginTop="9dp"
-					android:layout_width="27.42dp"
-					android:layout_height="36.94dp" />
-
-				<ImageView android:id="@+id/bin_2_icon_1"
-					android:src="@drawable/bin_2_icon_1"
-					android:contentDescription="bin_2_icon_1"
-					android:layout_marginStart="323dp"
-					android:layout_marginTop="9dp"
-					android:layout_width="27.42dp"
-					android:layout_height="36.94dp" />
-
-			</RelativeLayout>
-
-
-			<Button
-				android:id="@+id/sair_resp"
-				android:layout_width="174dp"
-				android:layout_height="45dp"
-				android:layout_gravity="center_horizontal|center"
-				android:layout_marginStart="222dp"
-				android:layout_marginTop="772dp"
-				android:alpha="0.60000002384186"
-				android:background="@drawable/_rectangle_3_shape"
-				android:gravity="center"
-				android:shadowColor="#000000"
-				android:shadowDx="0"
-				android:shadowDy="4"
-				android:shadowRadius="4"
-				android:text="@string/_sair_string"
-				android:textColor="@color/white"
-				android:textSize="26sp" />
-
-
-			<Button
-				android:id="@+id/add_prt"
-				android:layout_width="174dp"
-				android:layout_height="45dp"
-				android:layout_gravity="center_horizontal|center"
-				android:layout_marginStart="22dp"
-				android:layout_marginTop="772dp"
-				android:alpha="0.60000002384186"
-				android:background="@drawable/_rectangle_3_shape"
-				android:gravity="center"
-				android:shadowColor="#000000"
-				android:shadowDx="0"
-				android:shadowDy="4"
-				android:shadowRadius="4"
-				android:text="Adicionar"
-				android:textColor="@color/white"
-				android:textSize="26sp" />
-
-
-		</RelativeLayout>
-
-	</ScrollView>
-</HorizontalScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
